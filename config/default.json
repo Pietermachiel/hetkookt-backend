@@ -1,0 +1,11 @@
+{
+  "jwtPrivateKey": "unsecurepassword",
+  "db": "mongodb://127.0.0.1/favorites",
+  "port": "3900",
+  "requiresAuth": true,
+  "name": "app-name",
+  "mail": {
+    "host": "app-mail-server",
+    "password": "app_password"
+  }
+}
