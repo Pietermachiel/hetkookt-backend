@@ -5,7 +5,7 @@ const app = require("./app");
 
 mongoose
   .connect(
-    "mongodb//Pietermachiel:pieter19machiel54lambert@cluster0-npjfk.mongodb.net/test?retryWrites=true&w=majority",
+    "mongodb+srv://Pietermachiel:pieter19machiel54lambert@cluster0-npjfk.mongodb.net/favorites",
     {
       useNewUrlParser: true,
       useCreateIndex: true,
