@@ -1,6 +1,6 @@
 {
   "jwtPrivateKey": "favorites_jwtPrivatekey",
-  "db": "mongodb//Pietermachiel:pieter19machiel54lambert@cluster0-npjfk.mongodb.net/test?retryWrites=true&w=majority",
+  "db": "favorites_db",
   "mail": {
     "host": "app-mail-server",
     "password": "app_password"
