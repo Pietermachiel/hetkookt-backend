@@ -4,15 +4,12 @@ const mongoose = require("mongoose");
 const app = require("./app");
 
 mongoose
-  .connect(
-    "mongodb+srv://Pietermachiel:pieter19machiel54lambert@cluster0-npjfk.mongodb.net/test?retryWrites=true&w=majority",
-    {
-      useNewUrlParser: true,
-      useCreateIndex: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-    }
-  )
+  .connect("mongodb://127.0.0.1/mongoose", {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+  })
   .then(() => console.log("Connected to MongoDB..."));
 
 app.listen(
