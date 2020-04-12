@@ -1,4 +1,4 @@
 {
   "jwtPrivateKey": "favorites_jwtPrivatekey",
-  "DB": "favorites_db"
+  "db": "favorites_db"
 }
