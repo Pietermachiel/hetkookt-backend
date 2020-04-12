@@ -1,21 +1,15 @@
-const mongoose = require("mongoose");
-// const express = require("express");
-// const app = express();
-const app = require("./app");
+// const winston = require("winston");
+const express = require("express");
 const config = require("config");
+const app = express();
 
+// require("./startup/logging")();
+require("./startup/cors")(app);
+require("./startup/routes")(app);
 require("./startup/db")();
+require("./startup/config")();
 
-mongoose
-  .connect(config.get("db"), {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-    useFindAndModify: false,
-  })
-  .then(() => console.log("Connected to MongoDB..."));
+const port = process.env.PORT || config.get("port");
+const server = app.listen(port);
 
-app.listen(
-  5000,
-  console.log(() => "Listening on port 5000")
-);
+module.exports = server;
