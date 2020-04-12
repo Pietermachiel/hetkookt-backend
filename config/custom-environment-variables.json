@@ -1,8 +1,4 @@
 {
   "jwtPrivateKey": "favorites_jwtPrivatekey",
-  "db": "favorites_db",
-  "mail": {
-    "host": "app-mail-server",
-    "password": "app_password"
-  }
+  "db": "favorites_db"
 }

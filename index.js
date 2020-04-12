@@ -3,6 +3,8 @@ const mongoose = require("mongoose");
 // const app = express();
 const app = require("./app");
 
+require("./startup/db")();
+
 mongoose
   .connect(
     "mongodb+srv://Pietermachiel:pieter19machiel54lambert@cluster0-npjfk.mongodb.net/favorites",
