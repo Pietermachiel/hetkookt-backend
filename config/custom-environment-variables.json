@@ -1,4 +1,7 @@
 {
   "jwtPrivateKey": "favorites_jwtPrivatekey",
-  "db": "favorites_db"
+  "db": "favorites_db",
+  "user": "favorites_user",
+  "password": "favorites_password",
+  "dbName": "favorites_dbName"
 }
