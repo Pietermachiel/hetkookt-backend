@@ -1,9 +1,13 @@
 const auth = require("../middleware/auth"); // authorisation (not authentication, validating password)
+const jwt = require("jsonwebtoken");
+const config = require("config");
 const bcrypt = require("bcrypt");
 const _ = require("lodash");
 const express = require("express");
 const router = express.Router();
 const { User, validateUser } = require("../models/user");
+var nodemailer = require("nodemailer");
+var sgTransport = require("nodemailer-sendgrid-transport");
 
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id)
@@ -14,7 +18,7 @@ router.get("/me", auth, async (req, res) => {
 
 router.get("/", async (req, res) => {
   const users = await User.find()
-    .populate("recipes", "title author")
+    .populate("recipes", "title author active")
     .select("-__v -password -email")
     .sort("name");
   res.send(users);
@@ -27,29 +31,74 @@ router.post("/", async (req, res) => {
   let user = await User.findOne({ email: req.body.email });
   if (user) return res.status(400).send("User already registered.");
 
-  user = new User(_.pick(req.body, ["name", "email", "password", "favorites"]));
+  user = new User({
+    name: req.body.name,
+    email: req.body.email,
+    password: req.body.password,
+    temporarytoken: jwt.sign(
+      {
+        _id: req.body._id,
+        name: req.body.name,
+        email: req.body.email,
+      },
+      config.get("jwtPrivateKey"),
+      {
+        expiresIn: 12000,
+      }
+    ),
+  });
+
+  var options = {
+    auth: {
+      api_user: process.env.EMAIL_USER,
+      api_key: process.env.EMAIL_PASSWORD,
+    },
+  };
+
+  var client = nodemailer.createTransport(sgTransport(options));
+
+  var email = {
+    from: "noreply@hetkookt.nl",
+    to: user.email,
+    subject: "Hello",
+    text: "Hello world",
+    html: `Hello<strong> ${user.name}</strong>,<br><br>Click the link to activate your account: <a href="http://localhost:3000/verify/${user.temporarytoken}">Verify</a>`,
+  };
+
+  console.log(client);
+
+  client.sendMail(email, function (err, info) {
+    if (err) {
+      console.log(error);
+    } else {
+      console.log("Message sent: " + info.response);
+    }
+  });
+
   const salt = await bcrypt.genSalt(10);
   user.password = await bcrypt.hash(user.password, salt);
   await user.save();
   console.log(user);
-  res.send(user);
-  // const token = user.generateAuthToken(); // = method user model
-  // res
-  //   .header("x-auth-token", token)
-  //   // add a header so the user can read a costum header
-  //   // access-control-expose-headers= whitelist, x-auth-token= costum header
-  //   .header("access-control-expose-headers", "x-auth-token")
-  //   .send(_.pick(user, ["_id", "name", "email", "favorites"]));
+  // res.send(user);
+  const token = user.generateAuthToken(); // = method user model
+  // console.log(token);
+
+  res
+    .header("x-auth-token", token)
+    // add a header so the user can read a costum header
+    // access-control-expose-headers= whitelist, x-auth-token= costum header
+    .header("access-control-expose-headers", "x-auth-token")
+    .send(_.pick(user, ["_id", "name", "email", "active", "temporarytoken"]));
 });
 
 router.put("/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      name: req.body.name
+      name: req.body.name,
     },
     {
-      new: true
+      new: true,
     }
   );
   res.send(user);
@@ -59,10 +108,10 @@ router.put("/favorites/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      recipes: req.body.recipes
+      recipes: req.body.recipes,
     },
     {
-      new: true
+      new: true,
     }
   );
   console.log("plus");
@@ -73,14 +122,47 @@ router.put("/favminus/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      recipes: req.body.recipes
+      recipes: req.body.recipes,
     },
     {
-      new: true
+      new: true,
     }
   );
   console.log("minus");
   res.send(user);
+});
+
+// router.put("/verify/:token", (req, res) => {
+//   const user = User.findOne({ temporarytoken: req.params.token });
+//   if (!user) return res.status(400).send("Verification failed.");
+
+//   const token = req.params.token;
+//   console.log("the token is", token);
+
+//   jwt.verify(token, "unsecurepassword");
+
+//   user.temporarytoken = false;
+
+//   user.active = true;
+
+//   res.send(user);
+// });
+
+// Route to activate the user's account
+router.put("/verify/:token", (req, res) => {
+  User.findOne({ temporarytoken: req.params.token }, (err, user) => {
+    if (err) throw err; // Throw error if cannot login
+    const token = req.params.token; // Save the token from URL for verification
+    console.log("the token is", token);
+    // Function to verify the user's token
+    // console.log(user);
+    jwt.verify(token, config.get("jwtPrivateKey"));
+    // user.temporarytoken = false; // Remove temporary token
+    user.active = true; // Change account status to Activated
+    // Mongoose Method to save user into the database
+    user.save();
+    // console.log(user);
+  });
 });
 
 router.delete("/:id", async (req, res) => {

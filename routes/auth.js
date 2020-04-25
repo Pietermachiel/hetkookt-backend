@@ -19,6 +19,8 @@ router.post("/", async (req, res) => {
 
   const token = user.generateAuthToken();
 
+  if (user.active === false)
+    return res.status(400).send("Verification failed.");
   res.send(token);
 });
 
@@ -40,7 +42,7 @@ router.post("/", async (req, res) => {
 function validateUser(req) {
   const schema = Joi.object({
     email: Joi.string(),
-    password: Joi.string()
+    password: Joi.string(),
   });
   const validation = schema.validate(req);
   return validation;

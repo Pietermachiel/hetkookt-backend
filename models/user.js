@@ -7,32 +7,38 @@ const { recipeSchema } = require("./recipe");
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true
+    required: true,
   },
   email: {
     type: String,
     required: true,
-    unique: true
+    unique: true,
   },
   password: {
     type: String,
     required: true,
-    minlength: 5
+    minlength: 5,
+  },
+  temporarytoken: {
+    type: String,
+  },
+  active: {
+    type: Boolean,
+    default: false,
   },
   // recipes: {
   //   type: recipeSchema,
   //   required: true
   // }
-  recipes: []
+  recipes: [],
 });
 
-userSchema.methods.generateAuthToken = function() {
+userSchema.methods.generateAuthToken = function () {
   const token = jwt.sign(
     {
       _id: this._id,
       name: this.name,
       email: this.email,
-      favorites: this.favorites
     },
     config.get("jwtPrivateKey")
   );
@@ -43,20 +49,12 @@ const User = mongoose.model("User", userSchema);
 
 function validateUser(user) {
   const schema = Joi.object({
-    name: Joi.string()
-      .min(2)
-      .max(50)
-      .required(),
-    email: Joi.string()
-      .min(2)
-      .max(50)
-      .required()
-      .email(),
-    password: Joi.string()
-      .min(2)
-      .max(50)
-      .required(),
-    recipes: Joi.array()
+    name: Joi.string().min(2).max(50).required(),
+    email: Joi.string().min(2).max(50).required().email(),
+    password: Joi.string().min(2).max(50).required(),
+    temporarytoken: Joi.string(),
+    active: Joi.boolean().default(false),
+    recipes: Joi.array(),
   });
   const validation = schema.validate(user);
   return validation;
