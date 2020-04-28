@@ -1,4 +1,5 @@
 const auth = require("../middleware/auth"); // authorisation (not authentication, validating password)
+const mailtemplate = require("../mail/mailtemplate");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
@@ -58,11 +59,33 @@ router.post("/", async (req, res) => {
   var client = nodemailer.createTransport(sgTransport(options));
 
   var email = {
-    from: "noreply@hetkookt.nl",
+    from: "support@hetkookt.nl",
     to: user.email,
-    subject: "Hello",
-    text: "Hello world",
-    html: `Hello<strong> ${user.name}</strong>,<br><br>Click the link to activate your account: <a href="http://localhost:3000/verify/${user.temporarytoken}">Verify</a>`,
+    subject: "Welkom bij hetKookt",
+    text: "Welkom bij hetKookt",
+    html: mailtemplate(user.name, user.temporarytoken),
+
+    // html: `<h1 style="color: red;">hetkookt</h1><br>
+    // <p style="font-weight: normal">Welkom<strong> ${user.name}</strong>,<br><br>Bevestig je inschrijving door op onderstaande link te klikken: </p>
+    // <button style="
+    // background-color: #407afc;
+    // color: #fff;
+    // text-transform: uppercase;
+    // text-align: center;
+    // font-weight: 500;
+    // padding: 1.5rem 2rem;
+    // display: inline-block;
+    // border-radius: 2px;
+    // border: 1px solid transparent;
+    // letter-spacing: .1em;
+    // font-size: .75rem;
+    // line-height: 1;">
+    // <a style="color: white; text-decoration: none;" href="http://localhost:3000/verify/${user.temporarytoken}">Bevestig mijn inschrijving</a>
+    // </button>`,
+    // templateId: "d-96cc73c046b244f8b7c15f3938b4906b",
+    // dynamic_template_data: {
+    //   name: user.name,
+    // },
   };
 
   console.log(client);
@@ -132,28 +155,12 @@ router.put("/favminus/:id", async (req, res) => {
   res.send(user);
 });
 
-// router.put("/verify/:token", (req, res) => {
-//   const user = User.findOne({ temporarytoken: req.params.token });
-//   if (!user) return res.status(400).send("Verification failed.");
-
-//   const token = req.params.token;
-//   console.log("the token is", token);
-
-//   jwt.verify(token, "unsecurepassword");
-
-//   user.temporarytoken = false;
-
-//   user.active = true;
-
-//   res.send(user);
-// });
-
 // Route to activate the user's account
 router.put("/verify/:token", (req, res) => {
   User.findOne({ temporarytoken: req.params.token }, (err, user) => {
     if (err) throw err; // Throw error if cannot login
     const token = req.params.token; // Save the token from URL for verification
-    console.log("the token is", token);
+    console.log("Verified token:", token);
     // Function to verify the user's token
     // console.log(user);
     jwt.verify(token, config.get("jwtPrivateKey"));
