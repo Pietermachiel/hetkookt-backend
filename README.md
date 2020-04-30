@@ -37,3 +37,11 @@ Kean Amaral
 If you are using Express >= 4.16.0, body parser has been re-added under the methods express.json() and express.urlencoded(). – David Ferreira Mar 16 '19 at 17:58
 4
 app.use(bodyParser.urlencoded({ extended: true })); does not combine app.use(bodyParser.json()); and app.use(bodyParser.urlencoded({ extended: false }));: it does not handle application/json but only application/x-www-form-urlencoded. The extended options is used to specify whether bodyParser should parse URL-encoded data with qs (extended: true) or querystring (extended: false). – kimamula Jun 9 '19 at 4:14
+
+## nodemailer
+
+mailtemplate.js
+
+href="http://localhost:3000/verify/${temporarytoken}"
+href="https://yo.roozen.nl/verify/${temporarytoken}"
+href="https://hetkookt.netlify.app/verify/${temporarytoken}"
