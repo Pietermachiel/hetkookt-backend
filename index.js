@@ -5,7 +5,7 @@ const app = express();
 const rateLimit = require("express-rate-limit"); // Preventing DOS Attacks
 const xss = require("xss-clean"); // Preventing XSS Attacks
 const helmet = require("helmet"); // Preventing XSS Attacks
-const mongoSanitaize = require("express-mongo-sanitize"); //Preventing NoSQL Injection Attacks
+const mongoSanitize = require("express-mongo-sanitize"); //Preventing NoSQL Injection Attacks
 
 if (process.env.NODE_ENV !== "production") {
   require("dotenv").config();
@@ -19,7 +19,8 @@ require("./startup/config")();
 
 app.use(xss()); // Data Sanitization against XSS
 app.use(helmet()); // make sure cookies for JWT storing are HTTP Only!
-app.use(mongoSanitaize());
+app.use(express.json({ limit: "10kb" })); // Body limit is 10
+app.use(mongoSanitize());
 const limit = rateLimit({
   // preventing DOS attacks
   max: 5, // max requests
