@@ -31,6 +31,7 @@ const userSchema = new mongoose.Schema({
   //   required: true
   // }
   recipes: [],
+  favorites: [],
 });
 
 userSchema.methods.generateAuthToken = function () {
@@ -55,6 +56,7 @@ function validateUser(user) {
     temporarytoken: Joi.string(),
     active: Joi.boolean().default(false),
     recipes: Joi.array(),
+    favorites: Joi.array(),
   });
   const validation = schema.validate(user);
   return validation;

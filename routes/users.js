@@ -131,7 +131,7 @@ router.put("/favorites/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      recipes: req.body.recipes,
+      favorites: req.body.favorites,
     },
     {
       new: true,
@@ -142,6 +142,34 @@ router.put("/favorites/:id", async (req, res) => {
 });
 
 router.put("/favminus/:id", async (req, res) => {
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      favorites: req.body.favorites,
+    },
+    {
+      new: true,
+    }
+  );
+  console.log("minus");
+  res.send(user);
+});
+
+router.put("/recipes/:id", async (req, res) => {
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      recipes: req.body.recipes,
+    },
+    {
+      new: true,
+    }
+  );
+  console.log("plus");
+  res.send(user);
+});
+
+router.put("/recminus/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
