@@ -19,7 +19,7 @@ router.get("/me", auth, async (req, res) => {
 
 router.get("/", async (req, res) => {
   const users = await User.find()
-    .populate("recipes", "title author active")
+    .populate("recipes", "favorites", "title author active")
     .select("-__v -password -email")
     .sort("name");
   res.send(users);
