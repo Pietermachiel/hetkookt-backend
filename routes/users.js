@@ -19,7 +19,7 @@ router.get("/me", auth, async (req, res) => {
 
 router.get("/", async (req, res) => {
   const users = await User.find()
-    .populate("recipes", "favorites", "title author active")
+    .populate("recipes", "favorites", "stock", "title author active")
     .select("-__v -password -email")
     .sort("name");
   res.send(users);
@@ -141,19 +141,19 @@ router.put("/favorites/:id", async (req, res) => {
   res.send(user);
 });
 
-router.put("/favminus/:id", async (req, res) => {
-  const user = await User.findByIdAndUpdate(
-    req.params.id,
-    {
-      favorites: req.body.favorites,
-    },
-    {
-      new: true,
-    }
-  );
-  console.log("minus");
-  res.send(user);
-});
+// router.put("/favminus/:id", async (req, res) => {
+//   const user = await User.findByIdAndUpdate(
+//     req.params.id,
+//     {
+//       favorites: req.body.favorites,
+//     },
+//     {
+//       new: true,
+//     }
+//   );
+//   console.log("minus");
+//   res.send(user);
+// });
 
 router.put("/recipes/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
@@ -169,17 +169,31 @@ router.put("/recipes/:id", async (req, res) => {
   res.send(user);
 });
 
-router.put("/recminus/:id", async (req, res) => {
+// router.put("/recminus/:id", async (req, res) => {
+//   const user = await User.findByIdAndUpdate(
+//     req.params.id,
+//     {
+//       recipes: req.body.recipes,
+//     },
+//     {
+//       new: true,
+//     }
+//   );
+//   console.log("minus");
+//   res.send(user);
+// });
+
+router.put("/stock/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      recipes: req.body.recipes,
+      stock: req.body.stock,
     },
     {
       new: true,
     }
   );
-  console.log("minus");
+  console.log("plus");
   res.send(user);
 });
 

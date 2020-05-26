@@ -32,6 +32,7 @@ const userSchema = new mongoose.Schema({
   // }
   recipes: [],
   favorites: [],
+  stock: [],
 });
 
 userSchema.methods.generateAuthToken = function () {
@@ -57,6 +58,7 @@ function validateUser(user) {
     active: Joi.boolean().default(false),
     recipes: Joi.array(),
     favorites: Joi.array(),
+    stock: Joi.array(),
   });
   const validation = schema.validate(user);
   return validation;
