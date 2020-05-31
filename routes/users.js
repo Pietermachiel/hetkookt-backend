@@ -197,6 +197,20 @@ router.put("/stock/:id", async (req, res) => {
   res.send(user);
 });
 
+router.put("/extra/:id", async (req, res) => {
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      extra: req.body.extra,
+    },
+    {
+      new: true,
+    }
+  );
+  console.log("plus extra");
+  res.send(user);
+});
+
 // Route to activate the user's account
 router.put("/verify/:token", (req, res) => {
   User.findOne({ temporarytoken: req.params.token }, (err, user) => {
