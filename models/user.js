@@ -2,7 +2,6 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const Joi = require("@hapi/joi");
-const { recipeSchema } = require("./recipe");
 
 const freshSchema = new mongoose.Schema({
   ingredient: { type: String, required: false },
