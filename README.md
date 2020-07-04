@@ -1,3 +1,7 @@
+## uploads
+
+\$ git push heroku master
+
 # express.json()
 
 Here is the explanation that should clear doubts on express.json() and express.urlencoded() and the use of body-parser. It took me some time to figure this out.

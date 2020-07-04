@@ -14,14 +14,15 @@ router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id)
     // .populate("recipes", "title author basics tags isOpen dish, recipes")
     .select("-password -__v");
+  console.log(user.items);
   res.send(user);
 });
 
 router.get("/", async (req, res) => {
-  const users = await User.find()
-    .populate("recipes", "favorites", "stock", "title author active")
-    .select("-__v -password -email")
-    .sort("name");
+  const users = await User.find();
+  // .populate("recipes", "favorites", "stock", "title author active")
+  // .select("-__v -password -email")
+  // .sort("name");
   res.send(users);
 });
 
@@ -127,11 +128,22 @@ router.put("/:id", async (req, res) => {
   res.send(user);
 });
 
-router.put("/favorites/:id", async (req, res) => {
+// items
+
+router.get("/items", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-password -__v");
+  console.log(user.items);
+  const items = user.items;
+  console.log(user);
+  console.log(items);
+  res.send(items);
+});
+
+router.put("/items/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      favorites: req.body.favorites,
+      items: req.body.items,
     },
     {
       new: true,
@@ -140,48 +152,6 @@ router.put("/favorites/:id", async (req, res) => {
   console.log("plus");
   res.send(user);
 });
-
-// router.put("/favminus/:id", async (req, res) => {
-//   const user = await User.findByIdAndUpdate(
-//     req.params.id,
-//     {
-//       favorites: req.body.favorites,
-//     },
-//     {
-//       new: true,
-//     }
-//   );
-//   console.log("minus");
-//   res.send(user);
-// });
-
-router.put("/recipes/:id", async (req, res) => {
-  const user = await User.findByIdAndUpdate(
-    req.params.id,
-    {
-      recipes: req.body.recipes,
-    },
-    {
-      new: true,
-    }
-  );
-  console.log("plus");
-  res.send(user);
-});
-
-// router.put("/recminus/:id", async (req, res) => {
-//   const user = await User.findByIdAndUpdate(
-//     req.params.id,
-//     {
-//       recipes: req.body.recipes,
-//     },
-//     {
-//       new: true,
-//     }
-//   );
-//   console.log("minus");
-//   res.send(user);
-// });
 
 router.put("/stock/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
