@@ -12,7 +12,7 @@ const freshSchema = new mongoose.Schema({
 
 const stockSchema = new mongoose.Schema({
   ingredient: { type: String, required: false },
-  quantity: { type: Number, default: "", required: false },
+  quantity: { type: String, default: "", required: false },
   unit: { type: String, required: false },
   to_buy: { type: Boolean, required: false, default: true },
 });
