@@ -140,6 +140,9 @@ router.get("/items", auth, async (req, res) => {
 });
 
 router.put("/items/:id", async (req, res) => {
+  // const { error } = validateUser(req.body);
+  // if (error) return res.status(400).send(error.details[0].message);
+
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {

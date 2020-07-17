@@ -2,6 +2,19 @@ const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const Joi = require("@hapi/joi");
+const { string } = require("@hapi/joi");
+
+const tagsSchema = new mongoose.Schema({
+  name: { type: String, required: false },
+});
+
+const basicsSchema = mongoose.Schema({
+  name: { type: String, required: false },
+});
+
+const relatedSchema = mongoose.Schema({
+  name: { type: String, required: false },
+});
 
 const freshSchema = new mongoose.Schema({
   ingredient: { type: String, required: false },
@@ -17,16 +30,20 @@ const stockSchema = new mongoose.Schema({
   to_buy: { type: Boolean, required: false, default: true },
 });
 
+const directionsSchema = mongoose.Schema({
+  name: { type: String, required: false },
+});
+
 const itemSchema = mongoose.Schema({
   // _id: mongoose.Schema.Types.ObjectId,
   title: { type: String, required: false },
   dish: { type: String, required: false },
-  tags: { type: Array, default: [], required: false },
-  basics: { type: Array, default: [""], required: false },
-  related: { type: Array, default: [], required: false },
+  tags: [tagsSchema],
+  basics: [basicsSchema],
+  related: [relatedSchema],
   fresh: [freshSchema],
   stock: [stockSchema],
-  directions: { type: Array, required: false },
+  directions: [directionsSchema],
   author: { type: String, required: false },
   source: { type: String, required: false },
   source_url: { type: String, required: false },
