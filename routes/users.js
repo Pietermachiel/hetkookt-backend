@@ -6,7 +6,7 @@ const bcrypt = require("bcrypt");
 const _ = require("lodash");
 const express = require("express");
 const router = express.Router();
-const { User, validateUser } = require("../models/user");
+const { User, validateUser, validateItems } = require("../models/user");
 var nodemailer = require("nodemailer");
 var sgTransport = require("nodemailer-sendgrid-transport");
 
@@ -140,8 +140,8 @@ router.get("/items", auth, async (req, res) => {
 });
 
 router.put("/items/:id", async (req, res) => {
-  // const { error } = validateUser(req.body);
-  // if (error) return res.status(400).send(error.details[0].message);
+  const { error } = validateItems(req.body.items);
+  if (error) return res.status(400).send(error.details[0].message);
 
   const user = await User.findByIdAndUpdate(
     req.params.id,

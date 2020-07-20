@@ -5,51 +5,51 @@ const Joi = require("@hapi/joi");
 const { string } = require("@hapi/joi");
 
 const tagsSchema = new mongoose.Schema({
-  name: { type: String, required: false },
+  name: { type: String },
 });
 
 const basicsSchema = mongoose.Schema({
-  name: { type: String, required: false },
+  name: { type: String },
 });
 
 const relatedSchema = mongoose.Schema({
-  name: { type: String, required: false },
+  name: { type: String },
 });
 
 const freshSchema = new mongoose.Schema({
-  ingredient: { type: String, required: false },
-  quantity: { type: Number, default: "", required: false },
-  unit: { type: String, required: false },
-  to_buy: { type: Boolean, required: false, default: true },
+  ingredient: { type: String },
+  quantity: { type: Number, default: "" },
+  unit: { type: String },
+  to_buy: { type: Boolean, default: true },
 });
 
 const stockSchema = new mongoose.Schema({
-  ingredient: { type: String, required: false },
-  quantity: { type: String, default: "", required: false },
-  unit: { type: String, required: false },
-  to_buy: { type: Boolean, required: false, default: true },
+  ingredient: { type: String },
+  quantity: { type: String, default: "" },
+  unit: { type: String },
+  to_buy: { type: Boolean, default: true },
 });
 
 const directionsSchema = mongoose.Schema({
-  name: { type: String, required: false },
+  name: { type: String },
 });
 
 const itemSchema = mongoose.Schema({
   // _id: mongoose.Schema.Types.ObjectId,
-  title: { type: String, required: false },
-  dish: { type: String, required: false },
+  title: { type: String },
+  dish: { type: String },
   tags: [tagsSchema],
   basics: [basicsSchema],
   related: [relatedSchema],
   fresh: [freshSchema],
   stock: [stockSchema],
   directions: [directionsSchema],
-  author: { type: String, required: false },
-  source: { type: String, required: false },
-  source_url: { type: String, required: false },
-  info: { type: String, required: false },
-  date: { type: Array, required: false },
-  item: { type: Boolean, default: false, required: false },
+  author: { type: String },
+  source: { type: String },
+  source_url: { type: String },
+  info: { type: String },
+  date: { type: Array },
+  item: { type: Boolean, default: false },
 });
 
 const userSchema = new mongoose.Schema({
@@ -108,5 +108,31 @@ function validateUser(user) {
   return validation;
 }
 
+function validateItems(item) {
+  const schema = Joi.array().items(
+    Joi.object({
+      _id: Joi.string(),
+      title: Joi.string(),
+      dish: Joi.string(),
+      tags: Joi.array(),
+      basics: Joi.array(),
+      related: Joi.array(),
+      fresh: Joi.array(),
+      stock: Joi.array(),
+      directions: Joi.array(),
+      author: Joi.string().empty(""),
+      source: Joi.string().empty(""),
+      source_url: Joi.string().empty(""),
+      info: Joi.string().empty(""),
+      date: Joi.array().empty(""),
+      item: Joi.boolean(),
+    })
+  );
+
+  const validation = schema.validate(item);
+  return validation;
+}
+
 exports.User = User;
 exports.validateUser = validateUser;
+exports.validateItems = validateItems;
