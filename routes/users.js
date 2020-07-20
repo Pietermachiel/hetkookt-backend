@@ -152,7 +152,7 @@ router.put("/items/:id", async (req, res) => {
       new: true,
     }
   );
-  console.log("plus");
+  // console.log("plus");
   res.send(user);
 });
 
