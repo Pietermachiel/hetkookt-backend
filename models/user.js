@@ -16,6 +16,10 @@ const relatedSchema = mongoose.Schema({
   name: { type: String },
 });
 
+const dateSchema = mongoose.Schema({
+  name: { type: String },
+});
+
 const freshSchema = new mongoose.Schema({
   ingredient: { type: String },
   quantity: { type: Number, default: "" },
@@ -48,7 +52,7 @@ const itemSchema = mongoose.Schema({
   source: { type: String },
   source_url: { type: String },
   info: { type: String },
-  date: { type: Array },
+  date: [dateSchema],
   item: { type: Boolean, default: false },
 });
 
@@ -124,7 +128,7 @@ function validateItems(item) {
       source: Joi.string().empty(""),
       source_url: Joi.string().empty(""),
       info: Joi.string().empty(""),
-      date: Joi.array().empty(""),
+      date: Joi.array(),
       item: Joi.boolean(),
     })
   );
