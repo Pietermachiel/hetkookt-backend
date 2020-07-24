@@ -567,3 +567,13 @@
 {"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:32:15.644Z"}
 {"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T14:03:24.958Z"}
 {"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T14:03:24.971Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T14:10:55.253Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T14:10:55.266Z"}
+{"message":"Cannot read property 'items' of null","stack":"TypeError: Cannot read property 'items' of null\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/routes/users.js:28:20\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)","level":"error","timestamp":"2020-07-24T14:31:54.260Z"}
+{"message":"_ is not defined","stack":"ReferenceError: _ is not defined\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/routes/users.js:151:11\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)","level":"error","timestamp":"2020-07-24T14:32:27.060Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T14:44:35.056Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T14:44:35.069Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T14:47:19.164Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T14:47:19.177Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T15:06:48.847Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T15:06:48.861Z"}
