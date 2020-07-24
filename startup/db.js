@@ -1,4 +1,4 @@
-// const winston = require("winston");
+const winston = require("winston");
 const mongoose = require("mongoose");
 const config = require("config");
 
@@ -11,6 +11,6 @@ module.exports = function () {
       useCreateIndex: true,
       useUnifiedTopology: true,
     })
-    .then(() => console.log("Connected to MongoDB..."));
-  // .then(() => winston.info(`Connected to ${db}...`));
+    // .then(() => console.log("Connected to MongoDB..."));
+    .then(() => winston.info(`Connected to ${db}...`));
 };

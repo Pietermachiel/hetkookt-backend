@@ -49,7 +49,7 @@ const itemSchema = mongoose.Schema({
   stock: [stockSchema],
   directions: [directionsSchema],
   author: { type: String },
-  source: { type: String },
+  source: { type: String, required: true },
   source_url: { type: String },
   info: { type: String },
   date: [dateSchema],
@@ -71,6 +71,7 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 5,
   },
+  isAdmin: Boolean,
   temporarytoken: {
     type: String,
   },
@@ -89,6 +90,7 @@ userSchema.methods.generateAuthToken = function () {
       _id: this._id,
       name: this.name,
       email: this.email,
+      isAdmin: this.isAdmin,
     },
     config.get("jwtPrivateKey")
   );
@@ -125,7 +127,7 @@ function validateItems(item) {
       stock: Joi.array(),
       directions: Joi.array(),
       author: Joi.string().empty(""),
-      source: Joi.string().empty(""),
+      source: Joi.string().required(),
       source_url: Joi.string().empty(""),
       info: Joi.string().empty(""),
       date: Joi.array(),

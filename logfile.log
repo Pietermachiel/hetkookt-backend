@@ -1,0 +1,569 @@
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-21T18:54:39.675Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-21T19:12:50.703Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-21T19:26:37.244Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-21T19:26:37.264Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-21T19:29:58.883Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-21T19:30:50.224Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-21T19:30:50.244Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:08:27.416Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:08:27.435Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:13:04.519Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:13:04.540Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:15:38.535Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:15:38.550Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:22:01.077Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T13:22:01.089Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:22:48.077Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:22:48.089Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:31:58.127Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:31:58.140Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:42:32.962Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:42:32.975Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:48:02.298Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:48:02.310Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T13:51:48.581Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T13:51:48.594Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:36:40.419Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:36:40.439Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:40:50.703Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:40:50.724Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:44:15.915Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:44:15.936Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:47:38.649Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:47:38.670Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:47:51.652Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:47:51.672Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:48:04.305Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:48:04.327Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:49:45.780Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:49:45.800Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:50:43.698Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:50:43.719Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:56:37.413Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:56:37.434Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:56:47.764Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:56:47.789Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T14:58:38.174Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T14:58:38.195Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:00:40.941Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T15:00:40.961Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:03:51.817Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T15:03:51.829Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:04:11.547Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T15:04:11.567Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:05:30.857Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-22T15:05:30.877Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:05:44.469Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T15:05:44.490Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:06:31.599Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T15:06:31.620Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-22T15:09:01.963Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-22T15:09:01.984Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T07:56:29.605Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-23T07:56:29.617Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T07:58:10.900Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T07:58:10.919Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:29:16.812Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:29:16.832Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:30:23.505Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:30:23.525Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:32:06.689Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:32:06.710Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:32:36.683Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:32:36.704Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:35:14.108Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:35:14.131Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:39:10.904Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:39:10.928Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:41:43.831Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:41:43.851Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:43:36.980Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:43:37.000Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:46:29.736Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:46:29.757Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:47:20.679Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:47:20.700Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:51:43.300Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:51:43.321Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:51:55.205Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:51:55.227Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:52:54.168Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:52:54.189Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:53:22.965Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:53:22.986Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:54:38.434Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:54:38.455Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:55:37.939Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:55:37.960Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:56:27.300Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:56:27.322Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:56:50.920Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:56:50.941Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:57:09.837Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:57:09.858Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T11:57:25.429Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T11:57:25.450Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:05:31.538Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:05:31.559Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:06:09.553Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:06:09.574Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:06:31.092Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:06:31.113Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:06:37.007Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-23T12:06:37.021Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:11:37.505Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:11:37.525Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:14:00.714Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:14:00.735Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:14:42.096Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:14:42.117Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:15:05.901Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:15:05.922Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:16:43.240Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:16:43.261Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:21:09.698Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:21:09.718Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:22:34.087Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:22:34.108Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T12:24:04.911Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T12:24:04.932Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:30:31.988Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-23T13:30:32.002Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:38:42.894Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:38:42.910Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:39:20.853Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:39:20.868Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:39:37.740Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:39:37.755Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:39:47.173Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:39:47.187Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:41:07.958Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:41:07.973Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:43:36.851Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:43:36.864Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:44:53.324Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:44:53.338Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:45:21.309Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:45:21.324Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:45:43.721Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:45:43.736Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:46:04.753Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:46:04.768Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:46:24.801Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:46:24.816Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:46:44.763Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:46:44.777Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:50:15.608Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:50:15.622Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:50:27.131Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:50:27.146Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:53:12.064Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:53:12.080Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:53:36.198Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:53:36.214Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:54:15.562Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:54:15.577Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:54:49.138Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:54:49.153Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:56:42.645Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:56:42.659Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T13:56:58.270Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T13:56:58.285Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T14:53:01.342Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T14:53:01.356Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T14:58:47.043Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T14:58:47.057Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:01:14.925Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:01:14.940Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:02:02.002Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:02:02.017Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:02:24.559Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:02:24.575Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:03:20.166Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:03:20.180Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:05:37.477Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:05:37.492Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:07:17.441Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:07:17.456Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:07:55.829Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:07:55.844Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:08:59.534Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:08:59.549Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:09:58.383Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:09:58.397Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:12:01.013Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:12:01.027Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:17:55.346Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:17:55.360Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:18:24.981Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:18:24.995Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:20:15.100Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:20:15.115Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:20:22.734Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:20:22.748Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:22:59.767Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:22:59.782Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:23:14.715Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:23:14.729Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:34:08.936Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:34:08.951Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:34:54.572Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:34:54.587Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T15:38:27.848Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T15:38:27.862Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T17:13:29.510Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T17:13:29.525Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T17:16:13.374Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T17:16:13.388Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T17:17:03.653Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T17:17:03.667Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T18:58:32.722Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T18:58:32.736Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T18:58:41.698Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T18:58:41.712Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T18:59:43.450Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T18:59:43.465Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:02:50.315Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:02:50.329Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:02:54.970Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:02:54.985Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:03:36.208Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:03:36.222Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:06:00.334Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:06:00.348Z"}
+{"message":"Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).","stack":"ValidationError: Genre validation failed: name: Path `name` (`1234`) is shorter than the minimum allowed length (5).\n    at model.Document.invalidate (/Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/document.js:2575:32)\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/document.js:2395:17\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/schematype.js:1221:9\n    at processTicksAndRejections (internal/process/task_queues.js:82:9)","errors":{"name":{"properties":{"message":"Path `name` (`1234`) is shorter than the minimum allowed length (5).","type":"minlength","minlength":5,"path":"name","value":"1234"},"kind":"minlength","path":"name","value":"1234"}},"_message":"Genre validation failed","level":"error","timestamp":"2020-07-23T19:06:00.416Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:06:11.935Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:06:11.952Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:09:12.542Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:09:12.557Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:09:20.470Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:09:20.484Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:10:19.259Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:10:19.281Z"}
+{"message":"Genre validation failed: name: Path `name` (`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`) is longer than the maximum allowed length (50).","stack":"ValidationError: Genre validation failed: name: Path `name` (`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`) is longer than the maximum allowed length (50).\n    at model.Document.invalidate (/Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/document.js:2575:32)\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/document.js:2395:17\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/schematype.js:1221:9\n    at processTicksAndRejections (internal/process/task_queues.js:82:9)","errors":{"name":{"properties":{"message":"Path `name` (`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`) is longer than the maximum allowed length (50).","type":"maxlength","maxlength":50,"path":"name","value":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"},"kind":"maxlength","path":"name","value":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}},"_message":"Genre validation failed","level":"error","timestamp":"2020-07-23T19:10:19.350Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:11:35.887Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:11:35.905Z"}
+{"message":"Genre validation failed: name: Path `name` (`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`) is longer than the maximum allowed length (50).","stack":"ValidationError: Genre validation failed: name: Path `name` (`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`) is longer than the maximum allowed length (50).\n    at model.Document.invalidate (/Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/document.js:2575:32)\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/document.js:2395:17\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/node_modules/mongoose/lib/schematype.js:1221:9\n    at processTicksAndRejections (internal/process/task_queues.js:82:9)","errors":{"name":{"properties":{"message":"Path `name` (`xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`) is longer than the maximum allowed length (50).","type":"maxlength","maxlength":50,"path":"name","value":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"},"kind":"maxlength","path":"name","value":"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"}},"_message":"Genre validation failed","level":"error","timestamp":"2020-07-23T19:11:35.974Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:12:03.721Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:12:03.735Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:15:00.421Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:15:00.436Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:17:00.684Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:17:00.699Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:27:47.611Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:27:47.625Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:31:11.609Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:31:11.624Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:31:20.790Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:31:20.805Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:32:22.441Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:32:22.456Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:33:15.141Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:33:15.157Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:33:48.279Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:33:48.293Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:34:47.824Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:34:47.839Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:35:12.467Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:35:12.482Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:35:37.107Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:35:37.121Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:36:09.263Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:36:09.278Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:38:10.932Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:38:10.946Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:38:48.967Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:38:48.982Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:39:18.963Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:39:18.978Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:41:36.221Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:41:36.236Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:43:12.639Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:43:12.654Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:43:43.216Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:43:43.231Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:44:25.843Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:44:25.859Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:46:32.100Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:46:32.114Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:46:42.881Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:46:42.895Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-23T19:46:48.291Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-23T19:46:48.305Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:09:57.006Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:09:57.021Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:10:42.958Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:10:42.973Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:14:17.133Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:14:17.147Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:14:58.795Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:14:58.810Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:15:45.761Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:15:45.777Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:15:53.559Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:15:53.574Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:17:21.415Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:17:21.429Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:17:54.943Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:17:54.958Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:21:00.728Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:21:00.742Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:21:37.132Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:21:37.147Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:21:37.275Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:21:37.311Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:22:41.715Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:22:41.730Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:22:41.825Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:22:41.860Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:24:36.268Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:24:36.282Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:24:36.387Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:24:36.421Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:29:46.510Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:29:46.525Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:29:46.576Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:29:46.615Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:31:01.597Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:31:01.612Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:31:01.676Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:31:01.702Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:31:23.891Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:31:23.908Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:31:24.037Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:31:24.063Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:33:15.402Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:33:15.417Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:33:15.554Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:33:15.581Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:33:53.121Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:33:53.136Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:33:53.273Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:33:53.299Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:34:48.630Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:34:48.645Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:34:48.766Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:34:48.792Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:41:28.077Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:41:28.099Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:41:28.105Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:41:28.109Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:49:34.615Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:49:34.630Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:49:34.626Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:49:34.646Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:51:23.709Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:51:23.736Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:51:23.762Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:51:23.774Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:52:14.974Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:52:14.988Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:52:14.986Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:52:15.006Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:53:23.674Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:53:23.693Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:53:23.700Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:53:23.704Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:53:43.604Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:53:43.630Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:53:43.627Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:53:43.637Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:53:57.090Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:53:57.109Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:53:57.116Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:53:57.120Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:54:06.435Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:54:06.461Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:54:06.475Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:54:06.485Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:58:55.027Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:58:55.054Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:58:55.170Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:58:55.199Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:59:00.766Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:59:00.792Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:59:00.800Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:59:00.811Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:59:36.582Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:59:36.608Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:59:36.755Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:59:36.769Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:59:56.468Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T07:59:56.474Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:59:56.494Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T07:59:56.491Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:00:04.386Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:00:04.391Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T08:00:04.411Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T08:00:04.412Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:00:41.516Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:00:41.520Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T08:00:41.541Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T08:00:41.545Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:07:22.827Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:07:22.829Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:08:58.708Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:08:58.722Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T08:11:42.304Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:45:08.991Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T09:45:09.005Z"}
+{"message":"Cannot read property 'items' of null","stack":"TypeError: Cannot read property 'items' of null\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/routes/users.js:28:20\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)","level":"error","timestamp":"2020-07-24T09:48:44.163Z"}
+{"message":"Cannot read property 'items' of null","stack":"TypeError: Cannot read property 'items' of null\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/routes/users.js:28:20\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)","level":"error","timestamp":"2020-07-24T09:48:46.756Z"}
+{"message":"Cannot read property 'items' of null","stack":"TypeError: Cannot read property 'items' of null\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/routes/users.js:28:20\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)","level":"error","timestamp":"2020-07-24T09:48:49.917Z"}
+{"message":"_ is not defined","stack":"ReferenceError: _ is not defined\n    at /Users/pieterroozen/www/_hetkookt/hetkookt-backend/routes/users.js:151:11\n    at processTicksAndRejections (internal/process/task_queues.js:89:5)","level":"error","timestamp":"2020-07-24T09:49:49.836Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:50:08.567Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T09:50:08.580Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:52:10.014Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:52:10.029Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:52:35.838Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:52:35.853Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:52:35.918Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:52:35.944Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:55:39.631Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:55:39.646Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:55:39.645Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:55:39.665Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:57:50.583Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:57:50.597Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:57:50.595Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:57:50.614Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:58:50.012Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:58:50.027Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T09:58:50.023Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T09:58:50.043Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T10:06:36.941Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T10:06:36.956Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T10:06:36.954Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T10:06:36.974Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T10:07:07.705Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T10:07:07.733Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T10:07:07.743Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T10:07:07.758Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:18:48.538Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:18:48.559Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:18:48.570Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:18:48.569Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:21:09.432Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:21:09.446Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:21:09.443Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:21:09.462Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:24:15.157Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:24:15.181Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:24:15.188Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:24:15.193Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:25:35.717Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:25:35.741Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:25:35.749Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:25:35.755Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:26:20.510Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:26:20.533Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:26:20.539Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:26:20.545Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:27:35.414Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T12:27:35.427Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:27:43.512Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:27:43.537Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:27:43.538Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:27:43.549Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:28:46.677Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:28:46.692Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:28:46.689Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:28:46.709Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:30:08.925Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:30:08.953Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:30:08.952Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:30:08.962Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:34:23.277Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:34:23.292Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:34:23.289Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:34:23.309Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:35:35.115Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:35:35.133Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:35:35.141Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:35:35.143Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:35:43.528Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:35:43.548Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:35:44.198Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:35:44.221Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:36:17.069Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:36:17.089Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:36:17.698Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:36:17.720Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:37:15.783Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:37:15.804Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:37:16.428Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:37:16.456Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:39:33.117Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:39:33.138Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:39:33.768Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:39:33.795Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:41:08.627Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:41:08.647Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:41:09.289Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:41:09.315Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:42:07.511Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:42:07.531Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:42:08.143Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:42:08.172Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:42:52.663Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:42:52.686Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:42:53.317Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:42:53.339Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:44:35.802Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:44:35.823Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:44:36.774Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:44:36.798Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:47:19.482Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:47:19.503Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:47:20.120Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:47:20.143Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:49:05.205Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:49:05.225Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:49:05.835Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:49:05.857Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:50:00.832Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:50:00.852Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:50:01.478Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:50:01.505Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:50:27.294Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:50:27.314Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:50:27.922Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:50:27.945Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:51:39.439Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:51:39.460Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:51:40.410Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:51:40.433Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:51:48.013Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:51:48.034Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T12:51:48.716Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T12:51:48.742Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:00:27.858Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:00:27.879Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:00:28.534Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:00:28.557Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:01:27.752Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:01:27.771Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:01:28.402Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:01:28.430Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:02:09.662Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:02:09.683Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:02:10.312Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:02:10.341Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:03:27.579Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:03:27.601Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:03:28.251Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:03:28.280Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:24:16.505Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:24:16.528Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:24:17.181Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:24:17.204Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:25:59.594Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:25:59.616Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:26:00.273Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:26:00.303Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:32:14.812Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:32:14.834Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T13:32:15.612Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites_tests...","timestamp":"2020-07-24T13:32:15.644Z"}
+{"level":"info","message":"Listening on port 3900...","timestamp":"2020-07-24T14:03:24.958Z"}
+{"level":"info","message":"Connected to mongodb://127.0.0.1/favorites...","timestamp":"2020-07-24T14:03:24.971Z"}

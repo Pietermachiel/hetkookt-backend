@@ -1,14 +1,25 @@
+// const asyncMiddleware = require("../middleware/async");
 const auth = require("../middleware/auth"); // authorisation (not authentication, validating password)
 const mailtemplate = require("../mail/mailtemplate");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
-const _ = require("lodash");
+// const _ = require("lodash");
 const express = require("express");
 const router = express.Router();
 const { User, validateUser, validateItems } = require("../models/user");
 var nodemailer = require("nodemailer");
 var sgTransport = require("nodemailer-sendgrid-transport");
+
+// function asyncMiddleware(handler) {
+//   return async (req, res, next) => {
+//     try {
+//       await handler(req, res);
+//     } catch (ex) {
+//       next(ex);
+//     }
+//   };
+// }
 
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id)
@@ -18,11 +29,36 @@ router.get("/me", auth, async (req, res) => {
   res.send(user);
 });
 
+// app.use(error)
+
+// router.get("/", async (req, res, next) => {
+//   try {
+//     const users = await User.find();
+//     // .populate("recipes", "favorites", "stock", "title author active")
+//     // .select("-__v -password -email")
+//     // .sort("name");
+//     res.send(users);
+//   } catch (ex) {
+//     next(ex);
+//     // res.status(500).send("something failed");
+//   }
+// });
+
+// app.use(async)
+
+// router.get(
+//   "/",
+//   asyncMiddleware(async (req, res, next) => {
+//     const users = await User.find();
+//     res.send(users);
+//   })
+// );
+
+// require("express-async-errors");
+
 router.get("/", async (req, res) => {
+  // throw new Error("could not get");
   const users = await User.find();
-  // .populate("recipes", "favorites", "stock", "title author active")
-  // .select("-__v -password -email")
-  // .sort("name");
   res.send(users);
 });
 

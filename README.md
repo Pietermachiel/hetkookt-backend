@@ -1,3 +1,7 @@
+## testing
+
+\$ NODE_ENV=test node index.js
+
 ## uploads
 
 \$ git push heroku master
