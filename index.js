@@ -1,5 +1,5 @@
-const winston = require("winston");
-const error = require("./middleware/error");
+// const winston = require("winston");
+// const error = require("./middleware/error");
 const express = require("express");
 const config = require("config");
 const app = express();
@@ -13,7 +13,7 @@ if (process.env.NODE_ENV !== "production") {
 }
 
 require("./startup/validation")();
-require("./startup/logging")();
+// require("./startup/logging")();
 require("./startup/cors")(app);
 require("./startup/routes")(app);
 require("./startup/db")();
@@ -31,15 +31,15 @@ const limit = rateLimit({
 });
 app.use("/login", limit); // Setting limiter on specific route
 
-app.use(error); // not calling the function, this is just passing a reference to that function.
+// app.use(error); // not calling the function, this is just passing a reference to that function.
 
 console.log("process.env");
 console.log(process.env.EMAIL_USER);
 
 const port = process.env.PORT || config.get("port");
-// const server = app.listen(port);
-const server = app.listen(port, () =>
-  winston.info(`Listening on port ${port}...`)
-);
+const server = app.listen(port);
+// const server = app.listen(port, () =>
+//   winston.info(`Listening on port ${port}...`)
+// );
 
 module.exports = server;

@@ -1,22 +1,22 @@
-const winston = require("winston");
-// require("winston-mongodb");
-require("express-async-errors");
-const config = require("config");
-const db = config.get("db");
+// const winston = require("winston");
+// // require("winston-mongodb");
+// require("express-async-errors");
+// const config = require("config");
+// const db = config.get("db");
 
-module.exports = function () {
-  winston.handleExceptions(
-    new winston.transports.Console({ colorize: true, prettyPrint: true }),
-    new winston.transports.File({ filename: "uncaughtExceptions.log" })
-  );
+// module.exports = function () {
+//   winston.handleExceptions(
+//     new winston.transports.Console({ colorize: true, prettyPrint: true }),
+//     new winston.transports.File({ filename: "uncaughtExceptions.log" })
+//   );
 
-  process.on("unhandledRejection", (ex) => {
-    throw ex;
-  });
+//   process.on("unhandledRejection", (ex) => {
+//     throw ex;
+//   });
 
-  winston.add(winston.transports.File, { filename: "logfile.log" });
-  // winston.add(winston.transports.MongoDB, {
-  //   db: db,
-  //   level: "info",
-  // });
-};
+//   winston.add(winston.transports.File, { filename: "logfile.log" });
+//   // winston.add(winston.transports.MongoDB, {
+//   //   db: db,
+//   //   level: "info",
+//   // });
+// };

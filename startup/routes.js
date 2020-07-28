@@ -6,7 +6,7 @@ const kitchens = require("../routes/kitchens");
 const tags = require("../routes/tags");
 const categories = require("../routes/categories");
 const auth = require("../routes/auth");
-const error = require("../middleware/error");
+// const error = require("../middleware/error");
 
 module.exports = function (app) {
   app.use(express.json());
@@ -17,5 +17,5 @@ module.exports = function (app) {
   app.use("/api/kitchens", kitchens);
   app.use("/api/tags", tags);
   app.use("/api/categories", categories);
-  app.use(error);
+  // app.use(error);
 };
