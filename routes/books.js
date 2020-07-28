@@ -1,61 +1,63 @@
 const validateObjectId = require("../middleware/validateObjectId");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
-const { Genre, validate } = require("../models/genre");
-const mongoose = require("mongoose");
+const { Book, validate } = require("../models/Book"); //
 const express = require("express");
-
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const genres = await Genre.find().select("-__v").sort("name");
-  res.send(genres);
+  const books = await Book.find().populate("kitchen", "title");
+  res.send(books);
 });
 
 router.post("/", auth, async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  let genre = new Genre({ name: req.body.name });
-  genre = await genre.save();
+  let book = new Book({
+    title: req.body.title,
+    kitchen: req.body.kitchen,
+    // recipes: req.body.recipes,
+  });
+  book = await book.save();
 
-  res.send(genre);
+  res.send(book);
 });
 
 router.put("/:id", [auth, validateObjectId], async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const genre = await Genre.findByIdAndUpdate(
+  const book = await Book.findByIdAndUpdate(
     req.params.id,
-    { name: req.body.name },
+    { title: req.body.title },
     {
       new: true,
     }
   );
 
-  if (!genre)
-    return res.status(404).send("The genre with the given ID was not found.");
+  if (!book)
+    return res.status(404).send("The book with the given ID was not found.");
 
-  res.send(genre);
+  res.send(book);
 });
 
 router.delete("/:id", [auth, admin, validateObjectId], async (req, res) => {
-  const genre = await Genre.findByIdAndRemove(req.params.id);
+  const book = await Book.findByIdAndRemove(req.params.id);
 
-  if (!genre)
-    return res.status(404).send("The genre with the given ID was not found.");
+  if (!book)
+    return res.status(404).send("The book with the given ID was not found.");
 
-  res.send(genre);
+  res.send(book);
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
-  const genre = await Genre.findById(req.params.id).select("-__v");
+  const book = await Book.findById(req.params.id).select("-__v");
 
-  if (!genre)
-    return res.status(404).send("The genre with the given ID was not found.");
+  if (!book)
+    return res.status(404).send("The book with the given ID was not found.");
 
-  res.send(genre);
+  res.send(book);
 });
 
 module.exports = router;

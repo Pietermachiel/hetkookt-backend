@@ -6,6 +6,10 @@
 
 \$ git push heroku master
 
+## schema design in MongoDB
+
+https://www.mongodb.com/blog/post/6-rules-of-thumb-for-mongodb-schema-design-part-1
+
 # express.json()
 
 Here is the explanation that should clear doubts on express.json() and express.urlencoded() and the use of body-parser. It took me some time to figure this out.

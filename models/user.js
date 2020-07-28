@@ -53,7 +53,6 @@ const itemSchema = mongoose.Schema({
   source_url: { type: String },
   info: { type: String },
   date: [dateSchema],
-  item: { type: Boolean, default: false },
 });
 
 const userSchema = new mongoose.Schema({
@@ -131,7 +130,6 @@ function validateItems(item) {
       source_url: Joi.string().empty(""),
       info: Joi.string().empty(""),
       date: Joi.array(),
-      item: Joi.boolean(),
     })
   );
 

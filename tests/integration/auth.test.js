@@ -1,5 +1,5 @@
 const request = require("supertest");
-const { Genre } = require("../../models/genre");
+const { Book } = require("../../models/book");
 const { User } = require("../../models/user");
 
 describe("auth middleware", () => {
@@ -11,14 +11,14 @@ describe("auth middleware", () => {
   });
   afterEach(async () => {
     server.close();
-    await Genre.deleteMany({});
+    await Book.deleteMany({});
   });
 
   const exec = () => {
     return request(server)
-      .post("/api/genres")
+      .post("/api/books")
       .set("x-auth-token", token)
-      .send({ name: "genre1" });
+      .send({ title: "genre1" });
   };
 
   beforeEach(() => {
