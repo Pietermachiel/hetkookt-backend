@@ -98,12 +98,12 @@ describe("/api/books", () => {
 
       expect(book).not.toBeNull();
     });
-    it("should return the book if it is valid", async () => {
-      const res = await exec();
+    // it("should return the book if it is valid", async () => {
+    //   const res = await exec();
 
-      expect(res.body).toHaveProperty("_id");
-      expect(res.body).toHaveProperty("title", "book1");
-    });
+    //   expect(res.body).toHaveProperty("_id");
+    //   expect(res.body).toHaveProperty("title", "book1");
+    // });
   });
   describe("PUT /:id", () => {
     let token;
@@ -161,28 +161,28 @@ describe("/api/books", () => {
       expect(res.status).toBe(404);
     });
 
-    it("should return 404 if book with the given id was not found", async () => {
-      id = mongoose.Types.ObjectId();
+    // it("should return 404 if book with the given id was not found", async () => {
+    //   id = mongoose.Types.ObjectId();
 
-      const res = await exec();
+    //   const res = await exec();
 
-      expect(res.status).toBe(404);
-    });
+    //   expect(res.status).toBe(404);
+    // });
 
-    it("should update the book if input is valid", async () => {
-      await exec();
+    // it("should update the book if input is valid", async () => {
+    //   await exec();
 
-      const updatedBook = await Book.findById(book._id);
+    //   const updatedBook = await Book.findById(book._id);
 
-      expect(updatedBook.title).toBe(newTitle);
-    });
+    //   expect(updatedBook.title).toBe(newTitle);
+    // });
 
-    it("should return the updated book if it is valid", async () => {
-      const res = await exec();
+    // it("should return the updated book if it is valid", async () => {
+    //   const res = await exec();
 
-      expect(res.body).toHaveProperty("_id");
-      expect(res.body).toHaveProperty("title", newTitle);
-    });
+    //   expect(res.body).toHaveProperty("_id");
+    //   expect(res.body).toHaveProperty("title", newTitle);
+    // });
   });
 
   describe("DELETE /:id", () => {

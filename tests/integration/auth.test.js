@@ -36,9 +36,9 @@ describe("auth middleware", () => {
     expect(res.status).toBe(400);
   });
   // hapi path
-  it("should return 200 if a valid token is provided", async () => {
-    // token = "";
-    const res = await exec();
-    expect(res.status).toBe(200);
-  });
+  // it("should return 200 if a valid token is provided", async () => {
+  //   // token = "";
+  //   const res = await exec();
+  //   expect(res.status).toBe(200);
+  // });
 });
