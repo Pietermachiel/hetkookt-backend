@@ -19,6 +19,13 @@ require("./startup/routes")(app);
 require("./startup/db")();
 require("./startup/config")();
 
+app.all("*", function (req, res, next) {
+  var origin = req.get("origin");
+  res.header("Access-Control-Allow-Origin", origin);
+  res.header("Access-Control-Allow-Headers", "X-Requested-With");
+  res.header("Access-Control-Allow-Headers", "Content-Type");
+  next();
+});
 app.use(xss()); // Data Sanitization against XSS
 app.use(helmet()); // make sure cookies for JWT storing are HTTP Only!
 app.use(express.json({ limit: "10kb" })); // Body limit is 10
