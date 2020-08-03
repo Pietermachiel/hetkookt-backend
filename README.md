@@ -9,3 +9,8 @@
 - Werk met exacte maten.
 - Je boodschappenlijst altijd en overal bij de hand.
 - Koop niet meer dan je nodig hebt.
+
+### MERN stack
+
+- Nodejs backend voor React progressive web app
+- https://hetkookt.netlify.app
