@@ -1,7 +1,7 @@
 const validateObjectId = require("../middleware/validateObjectId");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
-const { Kitchen } = require("../models/Kitchen"); //
+const { Kitchen } = require("../models/kitchen"); //
 const express = require("express");
 const router = express.Router();
 
