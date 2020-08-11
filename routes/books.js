@@ -1,7 +1,7 @@
 const validateObjectId = require("../middleware/validateObjectId");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
-const { Book } = require("../models/Book"); //
+const { Book, validate } = require("../models/Book"); //
 const express = require("express");
 const router = express.Router();
 
@@ -11,8 +11,8 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", auth, async (req, res) => {
-  // const { error } = validate(req.body);
-  // if (error) return res.status(400).send(error.details[0].message);
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
 
   let book = new Book({
     title: req.body.title,
@@ -25,8 +25,8 @@ router.post("/", auth, async (req, res) => {
 });
 
 router.put("/:id", [auth, validateObjectId], async (req, res) => {
-  // const { error } = validate(req.body);
-  // if (error) return res.status(400).send(error.details[0].message);
+  const { error } = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
 
   const book = await Book.findByIdAndUpdate(
     req.params.id,
