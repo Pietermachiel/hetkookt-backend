@@ -1,7 +1,7 @@
 const validateObjectId = require("../middleware/validateObjectId");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
-const { Kitchen } = require("../models/kitchen"); //
+const { Kitchen, validate } = require("../models/kitchen"); //
 const express = require("express");
 const router = express.Router();
 
@@ -11,8 +11,11 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", async (req, res) => {
+  const error = validate(req.body);
+  if (error) return res.status(400).send(error.details[0].message);
+
   let kitchen = new Kitchen({
-    title: req.body.title,
+    name: req.body.name,
   });
   kitchen = await kitchen.save();
 

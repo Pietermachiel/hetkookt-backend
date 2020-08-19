@@ -3,13 +3,28 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const Joi = require("@hapi/joi");
 const { string } = require("@hapi/joi");
+const { recipeSchema } = require("./recipe");
+// const { dishSchema } = require("./dish");
+// const { tagSchema } = require("./tag");
 
-const tagsSchema = new mongoose.Schema({
-  name: { type: String },
+const dishSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true,
+    minlength: 2,
+    maxlength: 24,
+  },
 });
 
-const basicsSchema = mongoose.Schema({
-  name: { type: String },
+const tagSchema = new mongoose.Schema({
+  name: {
+    type: String,
+  },
+  category: {
+    name: {
+      type: String,
+    },
+  },
 });
 
 const relatedSchema = mongoose.Schema({
@@ -38,22 +53,45 @@ const directionsSchema = mongoose.Schema({
   name: { type: String },
 });
 
-const itemSchema = mongoose.Schema({
+var itemSchema = new mongoose.Schema({
   // _id: mongoose.Schema.Types.ObjectId,
-  title: { type: String },
-  dish: { type: String },
-  tags: [tagsSchema],
-  basics: [basicsSchema],
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 5,
+    maxlength: 255,
+  },
+  dish: dishSchema,
+  tags: [tagSchema],
+  // dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
+  // tags: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
   related: [relatedSchema],
   fresh: [freshSchema],
   stock: [stockSchema],
   directions: [directionsSchema],
-  author: { type: String },
-  source: { type: String },
-  source_url: { type: String },
   info: { type: String },
   date: [dateSchema],
 });
+
+const Item = mongoose.model("Item", itemSchema);
+
+function validateItems(item) {
+  var schema = Joi.object({
+    // _id: Joi.string(),
+    title: Joi.string().min(5).max(50).required(),
+    dish: Joi.string(),
+    tags: Joi.array(),
+    related: Joi.array(),
+    fresh: Joi.array(),
+    stock: Joi.array(),
+    directions: Joi.array(),
+    info: Joi.string().empty(""),
+    date: Joi.array(),
+  });
+  var validation = schema.validate(item);
+  return validation;
+}
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -79,6 +117,7 @@ const userSchema = new mongoose.Schema({
     default: false,
   },
   items: [itemSchema],
+  recipes: [recipeSchema],
   stock: [],
   extra: [],
 });
@@ -106,34 +145,11 @@ function validateUser(user) {
     temporarytoken: Joi.string(),
     active: Joi.boolean().default(false),
     items: Joi.array(),
+    recipes: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
   });
   const validation = schema.validate(user);
-  return validation;
-}
-
-function validateItems(item) {
-  const schema = Joi.array().items(
-    Joi.object({
-      _id: Joi.string(),
-      title: Joi.string(),
-      dish: Joi.string(),
-      tags: Joi.array(),
-      basics: Joi.array(),
-      related: Joi.array(),
-      fresh: Joi.array(),
-      stock: Joi.array(),
-      directions: Joi.array(),
-      author: Joi.string().empty(""),
-      source: Joi.string().empty(""),
-      source_url: Joi.string().empty(""),
-      info: Joi.string().empty(""),
-      date: Joi.array(),
-    })
-  );
-
-  const validation = schema.validate(item);
   return validation;
 }
 

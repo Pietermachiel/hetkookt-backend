@@ -1,0 +1,265 @@
+[
+  {
+    "name": "bladgroenten",
+
+    "tags": [
+      { "name": "andijvie" },
+      { "name": "paksoy" },
+      { "name": "snijbiet" },
+      { "name": "spinazie" }
+    ]
+  },
+  {
+    "name": "bollen",
+
+    "tags": [
+      { "name": "bieslook" },
+      { "name": "bosui" },
+      { "name": "knoflook" },
+      { "name": "rode ui" },
+      { "name": "sjalotten" },
+      { "name": "uien" },
+      { "name": "lenteui" }
+    ]
+  },
+  {
+    "name": "citrusvruchten",
+
+    "tags": [
+      { "name": "perssinaasappel" },
+      { "name": "bloedsinaasappel" },
+      { "name": "sinaasappel" },
+      { "name": "limoen" },
+      { "name": "citroen" },
+      { "name": "grapefruit" }
+    ]
+  },
+  {
+    "name": "fruit",
+
+    "tags": [
+      { "name": "aardbeien" },
+      { "name": "abrikozen" },
+      { "name": "appels" },
+      { "name": "blauwe druif" },
+      { "name": "framboos" },
+      { "name": "kers" },
+      { "name": "kweepeer" },
+      { "name": "meloen" },
+      { "name": "nectarine" },
+      { "name": "peren" },
+      { "name": "perzik" },
+      { "name": "rode bes" },
+      { "name": "witte druif" }
+    ]
+  },
+  {
+    "name": "ei",
+
+    "tags": [{ "name": "eieren" }]
+  },
+  {
+    "name": "exoten",
+
+    "tags": [
+      { "name": "ananas" },
+      { "name": "avocado" },
+      { "name": "bananen" },
+      { "name": "blauwe bes" },
+      { "name": "citroengras" },
+      { "name": "gember" },
+      { "name": "kiwi" },
+      { "name": "passievrucht" },
+      { "name": "mango" },
+      { "name": "granaatappel" },
+      { "name": "okra" }
+    ]
+  },
+  {
+    "name": "kiemen",
+
+    "tags": [{ "name": "taugé" }]
+  },
+  {
+    "name": "knollen",
+
+    "tags": [
+      { "name": "aardappelen" },
+      { "name": "aardperen" },
+      { "name": "bataat" },
+      { "name": "rode biet" },
+      { "name": "gele biet" },
+      { "name": "knolselderij" }
+    ]
+  },
+  {
+    "name": "koolsoorten",
+
+    "tags": [
+      { "name": "bloemkool" },
+      { "name": "boerenkool" },
+      { "name": "broccoli" },
+      { "name": "chineese kool" },
+      { "name": "koolrabi" },
+      { "name": "palmkool" },
+      { "name": "rode kool" },
+      { "name": "romanesco" },
+      { "name": "savooiekool" },
+      { "name": "spitskool" },
+      { "name": "witte kool" },
+      { "name": "spruitjes" }
+    ]
+  },
+  {
+    "name": "kruiden",
+
+    "tags": [
+      { "name": "basilicum" },
+      { "name": "dille" },
+      { "name": "dragon" },
+      { "name": "kervel" },
+      { "name": "koriander" },
+      { "name": "laurier" },
+      { "name": "munt" },
+      { "name": "oregano" },
+      { "name": "peterselie" },
+      { "name": "rozemarijn" },
+      { "name": "salieblad" },
+      { "name": "selderij" },
+      { "name": "tijm" },
+      { "name": "wijnblad" }
+    ]
+  },
+  {
+    "name": "paddenstoelen",
+
+    "tags": [
+      { "name": "champignons" },
+      { "name": "cantharel" },
+      { "name": "portobello" },
+      { "name": "shiitake" },
+      { "name": "paddenstoelen" },
+      { "name": "papardelle" }
+    ]
+  },
+  {
+    "name": "peulvruchten",
+
+    "tags": [
+      { "name": "doperwten" },
+      { "name": "snijbonen" },
+      { "name": "sperziebonen" },
+      { "name": "tuinbonen" },
+      { "name": "kousenband" }
+    ]
+  },
+  {
+    "name": "slasoorten",
+
+    "tags": [{ "name": "rucola" }, { "name": "sla" }, { "name": "romainsla" }]
+  },
+  {
+    "name": "stengelgewassen",
+
+    "tags": [
+      { "name": "asperge" },
+      { "name": "bleekselderij" },
+      { "name": "mais" },
+      { "name": "venkel" },
+      { "name": "prei" }
+    ]
+  },
+  {
+    "name": "vis",
+
+    "tags": [
+      { "name": "zeebaars" },
+      { "name": "dorade" },
+      { "name": "garnalen" },
+      { "name": "makreel" },
+      { "name": "sardines" },
+      { "name": "sliptong" },
+      { "name": "venusschelpen" },
+      { "name": "mosselen" }
+    ]
+  },
+  {
+    "name": "vlees",
+
+    "tags": [
+      { "name": "varkensgehakt" },
+      { "name": "rundergehakt" },
+      { "name": "buikspek" },
+      { "name": "rundvlees" },
+      { "name": "varkensvlees" },
+      { "name": "gerookt spek" },
+      { "name": "kalfsschenkel" },
+      { "name": "kip" },
+      { "name": "lamsgehakt" },
+      { "name": "lamsvlees" },
+      { "name": "mortadella" },
+      { "name": "pancetta" },
+      { "name": "ontbijtspek" },
+      { "name": "varkenskarbonade" }
+    ]
+  },
+  {
+    "name": "vruchtgewassen",
+
+    "tags": [
+      { "name": "aubergine" },
+      { "name": "courgette" },
+      { "name": "gele paprika" },
+      { "name": "groene paprika" },
+      { "name": "groene peper" },
+      { "name": "komkommer" },
+      { "name": "pompoen" },
+      { "name": "rode paprika" },
+      { "name": "rode peper" },
+      { "name": "tomaten" },
+      { "name": "madame Jeanette" },
+      { "name": "cherrytomaatjes" },
+      { "name": "cornichons" }
+    ]
+  },
+  {
+    "name": "wortels",
+
+    "tags": [
+      { "name": "mierikswortel" },
+      { "name": "pastinaak" },
+      { "name": "radijs" },
+      { "name": "winterwortel" },
+      { "name": "wortels" },
+      { "name": "bospeen" }
+    ]
+  },
+  {
+    "name": "zuivel",
+
+    "tags": [
+      { "name": "boter" },
+      { "name": "Cheddar" },
+      { "name": "cottage cheese" },
+      { "name": "crème fraîche" },
+      { "name": "eieren" },
+      { "name": "Emmentaler" },
+      { "name": "geitenkaas" },
+      { "name": "Gorgonzola" },
+      { "name": "Griekse yoghurt" },
+      { "name": "Gruyere" },
+      { "name": "karnemelk" },
+      { "name": "kwark" },
+      { "name": "kokoscrème" },
+      { "name": "melk" },
+      { "name": "mozarella" },
+      { "name": "Parmezaan" },
+      { "name": "ricotta" },
+      { "name": "room" },
+      { "name": "roomkaas" },
+      { "name": "Roquefort" },
+      { "name": "yoghurt" },
+      { "name": "zure room" }
+    ]
+  }
+]

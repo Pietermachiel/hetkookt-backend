@@ -1,18 +1,17 @@
 const Joi = require("@hapi/joi");
 const mongoose = require("mongoose");
-const { categorySchema } = require("./category");
 
 const tagSchema = new mongoose.Schema({
-  title: {
+  name: {
     type: String,
     required: true,
     trim: true,
-    minlength: 5,
-    maxlength: 255,
+    minlength: 2,
+    maxlength: 24,
   },
   category: {
-    type: categorySchema,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Category",
   },
 });
 
@@ -20,8 +19,8 @@ const Tag = mongoose.model("Tag", tagSchema);
 
 function validateTag(tag) {
   const schema = Joi.object({
-    title: Joi.string().min(5).max(50).required(),
-    categoryId: Joi.objectId().required(),
+    name: Joi.string().min(2).max(24).required(),
+    category: Joi.string().min(2).max(24).required(),
   });
   const validation = schema.validate(tag);
   return validation;

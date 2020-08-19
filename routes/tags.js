@@ -17,15 +17,16 @@ router.post("/", [auth], async (req, res) => {
   const { error } = validate(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
-  const category = await Category.findById(req.body.categoryId);
-  if (!category) return res.status(400).send("Invalid category.");
+  // const category = await Category.findById(req.body.categoryId);
+  // if (!category) return res.status(400).send("Invalid category.");
 
   const tag = new Tag({
-    title: req.body.title,
-    category: {
-      _id: category._id,
-      name: category.name,
-    },
+    name: req.body.name,
+    category: req.body.category,
+    // category: {
+    //   _id: category._id,
+    //   name: category.name,
+    // },
     // numberInStock: req.body.numberInStock,
     // // dailyRentalRate: req.body.dailyRentalRate,
     // publishDate: moment().toJSON(),
