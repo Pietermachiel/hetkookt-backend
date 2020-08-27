@@ -4,7 +4,6 @@ const mongoose = require("mongoose");
 const tagSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: true,
     trim: true,
     minlength: 2,
     maxlength: 24,
@@ -19,8 +18,8 @@ const Tag = mongoose.model("Tag", tagSchema);
 
 function validateTag(tag) {
   const schema = Joi.object({
-    name: Joi.string().min(2).max(24).required(),
-    category: Joi.string().min(2).max(24).required(),
+    name: Joi.string().min(2).max(24),
+    category: Joi.string().min(2).max(24),
   });
   const validation = schema.validate(tag);
   return validation;
@@ -28,4 +27,4 @@ function validateTag(tag) {
 
 exports.Tag = Tag;
 exports.tagSchema = tagSchema;
-exports.validate = validateTag;
+exports.validateTag = validateTag;

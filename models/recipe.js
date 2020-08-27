@@ -57,7 +57,7 @@ function validateRecipe(recipe) {
   var schema = Joi.object({
     title: Joi.string().min(5).max(50).required(),
     dish: Joi.object(),
-    tags: Joi.array(),
+    tags: Joi.array().empty(""),
     book: Joi.object().empty(""),
     related: Joi.array(),
     fresh: Joi.array(),
