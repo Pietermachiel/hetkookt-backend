@@ -9,7 +9,10 @@ const express = require("express");
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-  const tags = await Tag.find().select("-__v").sort("name");
+  const tags = await Tag.find()
+    .select("-__v")
+    .sort("name")
+    .populate("category");
   res.send(tags);
 });
 
