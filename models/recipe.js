@@ -3,9 +3,9 @@ Joi.objectId = require("joi-objectid")(Joi);
 const mongoose = require("mongoose");
 const { dishSchema } = require("./dish");
 
-const relatedSchema = mongoose.Schema({
-  name: { type: String },
-});
+// const relatedSchema = mongoose.Schema({
+//   name: { type: String },
+// });
 
 const dateSchema = mongoose.Schema({
   name: { type: String },
@@ -43,7 +43,7 @@ var recipeSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Book",
   },
-  related: [relatedSchema],
+  related: [{ type: mongoose.Schema.Types.ObjectId, ref: "Recipe" }],
   fresh: [freshSchema],
   stock: [stockSchema],
   directions: [directionsSchema],

@@ -14,7 +14,8 @@ router.get("/", async (req, res) => {
     .sort("title")
     .populate("dish")
     .populate("tags")
-    .populate("book");
+    .populate("book")
+    .populate("related");
   res.send(recipes);
 });
 
@@ -86,7 +87,7 @@ router.get("/:id", validateObjectId, async (req, res) => {
     .select("-__v")
     .sort("title")
     .populate("dish")
-    // .populate("tags")
+    .populate("related")
     .populate({ path: "tags", populate: { path: "category" } })
     .populate("book");
 

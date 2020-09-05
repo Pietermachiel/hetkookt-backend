@@ -1,4 +1,4 @@
-const { Tag, validate } = require("../models/tag");
+const { Tag, validateTag } = require("../models/tag");
 const { Category } = require("../models/category");
 const auth = require("../middleware/auth");
 const admin = require("../middleware/admin");
@@ -17,7 +17,7 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/", [auth], async (req, res) => {
-  const { error } = validate(req.body);
+  const { error } = validateTag(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   // const category = await Category.findById(req.body.categoryId);
@@ -40,7 +40,7 @@ router.post("/", [auth], async (req, res) => {
 });
 
 router.put("/:id", [auth], async (req, res) => {
-  const { error } = validate(req.body);
+  const { error } = validateTag(req.body);
   if (error) return res.status(400).send(error.details[0].message);
 
   const category = await Category.findById(req.body.categoryId);
