@@ -6,6 +6,7 @@ const { dishSchema } = require("./dish");
 // const relatedSchema = mongoose.Schema({
 //   name: { type: String },
 // });
+const recipeId = mongoose.Types.ObjectId().toHexString();
 
 const dateSchema = mongoose.Schema({
   name: { type: String },
@@ -43,7 +44,12 @@ var recipeSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     ref: "Book",
   },
-  related: [{ type: mongoose.Schema.Types.ObjectId, ref: "Recipe" }],
+  related: [
+    {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Recipe",
+    },
+  ],
   fresh: [freshSchema],
   stock: [stockSchema],
   directions: [directionsSchema],

@@ -24,13 +24,15 @@ var sgTransport = require("nodemailer-sendgrid-transport");
 
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id)
-    .populate({
-      path: "recipes items",
-      // populate: {
-      //   path: "dish tags",
-      //   populate: { path: "category" },
-      // },
-    })
+    // .populate({
+    //   path: "items",
+    //   populate: {
+    //     path: "tags",
+    //     populate: { path: "category" },
+    //   },
+    //   populate: "related",
+    // })
+    // .populate("related")
     .select("-password -__v");
   // console.log(user.items);
   res.send(user);
@@ -174,11 +176,11 @@ router.put("/:id", async (req, res) => {
 // items
 
 router.get("/items", auth, async (req, res) => {
-  const user = await User.findById(req.user._id)
-    .select("-__v")
-    .sort("title")
-    .populate("dish")
-    .populate("tags");
+  const user = await User.findById(req.user._id).select("-__v");
+  // .sort("title")
+  // .populate("dish")
+  // .populate("tags")
+  // .populate("related");
   // console.log(user.items);
   const items = user.items;
   // console.log(user);
@@ -257,31 +259,30 @@ module.exports = router;
 
 // // recipes
 
-router.get("/recipes", auth, async (req, res) => {
-  const user = await User.findById(req.user._id)
-    .select("-__v")
-    .sort("title")
-    .populate("dish")
-    .populate("tags")
-    .populate("book");
+// router.get("/recipes", auth, async (req, res) => {
+//   const user = await User.findById(req.user._id)
+//     .select("-__v")
+//     .sort("title")
+//     .populate("dish")
+//     .populate("tags")
+//     .populate("book");
+//   const recipes = user.recipes;
+//   res.send(recipes);
+// });
 
-  const recipes = user.recipes;
-  res.send(recipes);
-});
+// router.put("/recipes/:id", async (req, res) => {
+//   // const { error } = validateRecipe(req.body.recipes);
+//   // if (error) return res.status(400).send(error.details[0].message);
 
-router.put("/recipes/:id", async (req, res) => {
-  // const { error } = validateRecipe(req.body.recipes);
-  // if (error) return res.status(400).send(error.details[0].message);
-
-  const user = await User.findByIdAndUpdate(
-    req.params.id,
-    {
-      recipes: req.body.recipes,
-    },
-    {
-      new: true,
-    }
-  );
-  // console.log("plus");
-  res.send(user);
-});
+//   const user = await User.findByIdAndUpdate(
+//     req.params.id,
+//     {
+//       recipes: req.body.recipes,
+//     },
+//     {
+//       new: true,
+//     }
+//   );
+//   // console.log("plus");
+//   res.send(user);
+// });

@@ -3,9 +3,38 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const Joi = require("@hapi/joi");
 const { string } = require("@hapi/joi");
-const { recipeSchema } = require("./recipe");
+// const { recipeSchema } = require("./recipe");
 // const { dishSchema } = require("./dish");
 // const { tagSchema } = require("./tag");
+const recipeId = mongoose.Types.ObjectId().toHexString();
+
+// var recipeSchema = new mongoose.Schema({
+//   title: {
+//     type: String,
+//     required: true,
+//     trim: true,
+//     minlength: 5,
+//     maxlength: 255,
+//   },
+//   dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
+//   tags: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
+//   book: {
+//     type: mongoose.Schema.Types.ObjectId,
+//     ref: "Book",
+//   },
+//   related: [
+//     {
+//       type: mongoose.Schema.Types.ObjectId,
+//       ref: "Recipe",
+//       default: [{ _id: recipeId }],
+//     },
+//   ],
+//   fresh: [freshSchema],
+//   stock: [stockSchema],
+//   directions: [directionsSchema],
+//   info: { type: String },
+//   date: [dateSchema],
+// });
 
 const dishSchema = new mongoose.Schema({
   name: {
@@ -25,10 +54,6 @@ const tagSchema = new mongoose.Schema({
       type: String,
     },
   },
-});
-
-const relatedSchema = mongoose.Schema({
-  name: { type: String },
 });
 
 const dateSchema = mongoose.Schema({
@@ -51,6 +76,28 @@ const stockSchema = new mongoose.Schema({
 
 const directionsSchema = mongoose.Schema({
   name: { type: String },
+});
+
+const relatedSchema = mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 5,
+    maxlength: 255,
+  },
+  dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
+  tags: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
+  book: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Book",
+  },
+  related: [],
+  fresh: [freshSchema],
+  stock: [stockSchema],
+  directions: [directionsSchema],
+  info: { type: String },
+  date: [dateSchema],
 });
 
 var itemSchema = new mongoose.Schema({
@@ -117,7 +164,7 @@ const userSchema = new mongoose.Schema({
     default: false,
   },
   items: [itemSchema],
-  recipes: [recipeSchema],
+  // recipes: [recipeSchema],
   stock: [],
   extra: [],
 });
@@ -145,7 +192,7 @@ function validateUser(user) {
     temporarytoken: Joi.string(),
     active: Joi.boolean().default(false),
     items: Joi.array(),
-    recipes: Joi.array(),
+    // recipes: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
   });
