@@ -105,7 +105,7 @@ router.post("/", async (req, res) => {
   var client = nodemailer.createTransport(sgTransport(options));
 
   var email = {
-    from: "support@hetkookt.nl",
+    from: "studio@roozen.nl",
     to: user.email,
     subject: "Welkom bij hetKookt",
     text: "Welkom bij hetKookt",
