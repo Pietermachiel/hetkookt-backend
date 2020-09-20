@@ -87,9 +87,9 @@ router.get("/:id", validateObjectId, async (req, res) => {
     .select("-__v")
     .sort("title")
     .populate("dish")
-    .populate("related")
-    .populate({ path: "tags", populate: { path: "category" } })
-    .populate("book");
+    .populate("tags")
+    .populate("book")
+    .populate("related");
 
   if (!recipe)
     return res.status(404).send("The recipe with the given ID was not found.");
