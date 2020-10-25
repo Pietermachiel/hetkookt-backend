@@ -13,7 +13,8 @@ router.get("/", async (req, res) => {
     .select("-__v")
     .sort("title")
     .populate("dish")
-    .populate("tags")
+    // .populate("tags")
+    .populate({ path: "tags", populate: { path: "category" } })
     .populate("book")
     .populate("related");
   res.send(recipes);
