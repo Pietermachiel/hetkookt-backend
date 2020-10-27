@@ -1,4 +1,3 @@
-// const asyncMiddleware = require("../middleware/async");
 const auth = require("../middleware/auth"); // authorisation (not authentication, validating password)
 const mailtemplate = require("../mail/mailtemplate");
 const jwt = require("jsonwebtoken");
@@ -77,11 +76,8 @@ router.post("/", async (req, res) => {
   const salt = await bcrypt.genSalt(10);
   user.password = await bcrypt.hash(user.password, salt);
   await user.save();
-  // console.log("user");
-  // console.log(user);
-  // console.log(user);  // res.send(user);
+
   const token = user.generateAuthToken(); // = method user model
-  // console.log(token);
 
   res
     .header("x-auth-token", token)
