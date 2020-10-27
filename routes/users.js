@@ -62,7 +62,7 @@ router.post("/", async (req, res) => {
     html: mailtemplate(user.name, user.temporarytoken),
   };
 
-  // console.log(client);
+  console.log("the apikey");
 
   client.sendMail(email, function (err, info) {
     if (err) {
