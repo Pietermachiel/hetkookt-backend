@@ -64,6 +64,8 @@ router.post("/", async (req, res) => {
   console.log("the apikey");
 
   client.sendMail(email, function (err, info) {
+    console.log("email");
+    console.log(email);
     if (err) {
       // console.log("error");
       console.log(error);
