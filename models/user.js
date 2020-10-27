@@ -3,10 +3,6 @@ const jwt = require("jsonwebtoken");
 const config = require("config");
 const Joi = require("@hapi/joi");
 const { string } = require("@hapi/joi");
-// const { recipeSchema } = require("./recipe");
-// const { dishSchema } = require("./dish");
-// const { tagSchema } = require("./tag");
-// const recipeId = mongoose.Types.ObjectId().toHexString();
 
 const dishSchema = new mongoose.Schema({
   name: {
