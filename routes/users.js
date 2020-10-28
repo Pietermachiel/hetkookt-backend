@@ -47,7 +47,7 @@ router.post("/", async (req, res) => {
 
   var options = {
     auth: {
-      api_key: process.env.EMAIL_PASSWORD,
+      api_key: process.env.SENDGRID_PASSWORD,
     },
   };
 
@@ -63,7 +63,7 @@ router.post("/", async (req, res) => {
 
   console.log("the apikey");
 
-  client.sendMail(email, function (err, info) {
+  client.sendMail(email, function (err, res) {
     console.log("email");
     console.log(email);
     if (err) {
@@ -71,7 +71,7 @@ router.post("/", async (req, res) => {
       console.log(error);
     } else {
       // console.log("Message sent");
-      console.log("Message sent: " + info.response);
+      console.log("Message sent: " + res);
     }
   });
 
