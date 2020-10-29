@@ -134,6 +134,10 @@ const userSchema = new mongoose.Schema({
   items: [itemSchema],
   stock: [],
   extra: [],
+  registrationDate: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 userSchema.methods.generateAuthToken = function () {
@@ -161,6 +165,7 @@ function validateUser(user) {
     items: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
+    registrationDate: Joi.date(),
   });
   const validation = schema.validate(user);
   return validation;

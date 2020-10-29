@@ -1,5 +1,4 @@
 const auth = require("../middleware/auth"); // authorisation (not authentication, validating password)
-const mailtemplate = require("../mail/mailtemplate");
 const jwt = require("jsonwebtoken");
 const config = require("config");
 const bcrypt = require("bcrypt");
@@ -10,6 +9,7 @@ const { User, validateUser, validateItems } = require("../models/user");
 const { validateRecipe } = require("../models/recipe");
 var nodemailer = require("nodemailer");
 var sgTransport = require("nodemailer-sendgrid-transport");
+var mailtemplate = require("../mail/mailtemplate");
 
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id).select("-password -__v");
@@ -63,7 +63,7 @@ router.post("/", async (req, res) => {
 
   console.log("the apikey");
 
-  client.sendMail(email, function (err, res) {
+  client.sendMail(email, function (err, info) {
     console.log("email");
     console.log(email);
     if (err) {
@@ -71,7 +71,7 @@ router.post("/", async (req, res) => {
       console.log(error);
     } else {
       // console.log("Message sent");
-      console.log("Message sent: " + res);
+      console.log("Message sent: " + info.messageId);
     }
   });
 
