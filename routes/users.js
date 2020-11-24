@@ -134,6 +134,38 @@ router.put("/items/:id", async (req, res) => {
   res.send(user);
 });
 
+// groceries
+
+router.get("/groceries", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-__v");
+  // .sort("title")
+  // .populate("dish")
+  // .populate("tags")
+  // .populate("related");
+  // console.log(user.groceries);
+  const groceries = user.groceries;
+  // console.log(user);
+  // console.log(groceries);
+  res.send(groceries);
+});
+
+router.put("/groceries/:id", async (req, res) => {
+  // const { error } = validateGroceries(req.body.groceries);
+  // if (error) return res.status(400).send(error.details[0].message);
+
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      groceries: req.body.groceries,
+    },
+    {
+      new: true,
+    }
+  );
+  // console.log("plus");
+  res.send(user);
+});
+
 router.put("/stock/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,

@@ -24,6 +24,20 @@ const tagSchema = new mongoose.Schema({
   },
 });
 
+const bookSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    minlength: 5,
+    maxlength: 50,
+  },
+  author: { type: String },
+  publisher: { type: String },
+  source: { type: String },
+  year: { type: Number },
+  kitchen: { type: mongoose.Schema.Types.ObjectId, ref: "Kitchen" },
+  text: { type: String },
+});
+
 const dateSchema = mongoose.Schema({
   name: { type: String },
 });
@@ -79,6 +93,7 @@ var itemSchema = new mongoose.Schema({
   },
   dish: dishSchema,
   tags: [tagSchema],
+  book: bookSchema,
   // dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
   // tags: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
   related: [relatedSchema],
@@ -87,6 +102,7 @@ var itemSchema = new mongoose.Schema({
   directions: [directionsSchema],
   info: { type: String },
   date: [dateSchema],
+  myrecipe: { type: Boolean, default: true },
 });
 
 const Item = mongoose.model("Item", itemSchema);
@@ -103,8 +119,49 @@ function validateItems(item) {
     directions: Joi.array(),
     info: Joi.string().empty(""),
     date: Joi.array(),
+    myrecipe: Joi.boolean(),
   });
   var validation = schema.validate(item);
+  return validation;
+}
+
+var grocerySchema = new mongoose.Schema({
+  // _id: mongoose.Schema.Types.ObjectId,
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 5,
+    maxlength: 255,
+  },
+  dish: dishSchema,
+  tags: [tagSchema],
+  // dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
+  // tags: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
+  related: [relatedSchema],
+  fresh: [freshSchema],
+  stock: [stockSchema],
+  directions: [directionsSchema],
+  book: bookSchema,
+  info: { type: String },
+});
+
+const Grocery = mongoose.model("Grocery", grocerySchema);
+
+function validateGroceries(grocery) {
+  var schema = Joi.object({
+    // _id: Joi.string(),
+    title: Joi.string().min(5).max(50).required(),
+    dish: Joi.string(),
+    tags: Joi.array(),
+    related: Joi.array(),
+    fresh: Joi.array(),
+    stock: Joi.array(),
+    directions: Joi.array(),
+    book: Joi.string(),
+    info: Joi.string().empty(""),
+  });
+  var validation = schema.validate(grocery);
   return validation;
 }
 
@@ -132,6 +189,7 @@ const userSchema = new mongoose.Schema({
     default: false,
   },
   items: [itemSchema],
+  groceries: [grocerySchema],
   stock: [],
   extra: [],
   registrationDate: {
@@ -163,6 +221,7 @@ function validateUser(user) {
     temporarytoken: Joi.string(),
     active: Joi.boolean().default(false),
     items: Joi.array(),
+    grocery: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
     registrationDate: Joi.date(),
@@ -174,3 +233,4 @@ function validateUser(user) {
 exports.User = User;
 exports.validateUser = validateUser;
 exports.validateItems = validateItems;
+exports.validateGroceries = validateGroceries;
