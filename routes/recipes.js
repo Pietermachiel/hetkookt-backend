@@ -20,6 +20,16 @@ router.get("/", async (req, res) => {
   res.send(recipes);
 });
 
+router.get("/sanity", async (req, res) => {
+  // const titlequery = req.query.title;
+  // console.log(titlequery);
+  // const recipes = await Recipe.find({ title: titlequery })
+  const recipes = await Recipe.find()
+    .select("-tags -dish -related -book -date -__v")
+    .sort("title");
+  res.send(recipes);
+});
+
 router.post("/", [auth], async (req, res) => {
   const { error } = validateRecipe(req.body);
   if (error) return res.status(400).send(error.details[0].message);
