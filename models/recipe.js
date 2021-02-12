@@ -21,7 +21,7 @@ const freshSchema = new mongoose.Schema({
 
 const stockSchema = new mongoose.Schema({
   ingredient: { type: String },
-  quantity: { type: String, default: "" },
+  quantity: { type: Number, default: "" },
   unit: { type: String },
   to_buy: { type: Boolean, default: true },
 });
