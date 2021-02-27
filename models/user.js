@@ -43,7 +43,7 @@ const dateSchema = mongoose.Schema({
 });
 
 const freshSchema = new mongoose.Schema({
-  ingredient: { type: String },
+  ingredienttag: { name: { type: String } },
   quantity: { type: Number, default: "" },
   unit: { type: String },
   to_buy: { type: Boolean, default: true },
