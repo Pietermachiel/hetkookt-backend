@@ -27,7 +27,7 @@ const tagSchema = new mongoose.Schema({
 const bookSchema = new mongoose.Schema({
   name: {
     type: String,
-    minlength: 5,
+    minlength: 2,
     maxlength: 50,
   },
   author: { type: String },
@@ -65,8 +65,8 @@ const relatedSchema = mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    minlength: 5,
-    maxlength: 255,
+    minlength: 2,
+    maxlength: 50,
   },
   dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
   tag: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
@@ -84,24 +84,25 @@ const relatedSchema = mongoose.Schema({
 
 var itemSchema = new mongoose.Schema({
   // _id: mongoose.Schema.Types.ObjectId,
+  _id: { type: String },
   title: {
     type: String,
     required: true,
     trim: true,
-    minlength: 5,
-    maxlength: 255,
+    minlength: 2,
+    maxlength: 50,
   },
-  dish: dishSchema,
-  tag: [tagSchema],
-  book: bookSchema,
+  dish: { type: Object },
+  tag: [{ type: Object }],
+  book: { type: Object },
   // dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
   // tag: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
-  related: [relatedSchema],
-  fresh: [freshSchema],
-  stock: [stockSchema],
-  directions: [directionsSchema],
+  related: [{ type: Object }],
+  fresh: [{ type: Object }],
+  stock: [{ type: Object }],
+  directions: [{ type: Object }],
   info: { type: String },
-  date: [dateSchema],
+  // date: [dateSchema],
   myrecipe: { type: Boolean, default: true },
 });
 
@@ -110,7 +111,7 @@ const Item = mongoose.model("Item", itemSchema);
 function validateItems(item) {
   var schema = Joi.object({
     // _id: Joi.string(),
-    title: Joi.string().min(5).max(50).required(),
+    title: Joi.string().min(2).max(50).required(),
     dish: Joi.string(),
     tag: Joi.array(),
     related: Joi.array(),
@@ -131,7 +132,7 @@ var grocerySchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
-    minlength: 5,
+    minlength: 2,
     maxlength: 255,
   },
   dish: dishSchema,

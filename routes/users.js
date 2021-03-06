@@ -120,6 +120,7 @@ router.get("/items", auth, async (req, res) => {
 router.put("/items/:id", async (req, res) => {
   // const { error } = validateItems(req.body.items);
   // if (error) return res.status(400).send(error.details[0].message);
+  console.log("plus");
 
   const user = await User.findByIdAndUpdate(
     req.params.id,
@@ -130,7 +131,6 @@ router.put("/items/:id", async (req, res) => {
       new: true,
     }
   );
-  // console.log("plus");
   res.send(user);
 });
 
