@@ -82,6 +82,8 @@ const relatedSchema = mongoose.Schema({
   date: [dateSchema],
 });
 
+// item
+
 var itemSchema = new mongoose.Schema({
   // _id: mongoose.Schema.Types.ObjectId,
   _id: { type: String },
@@ -113,21 +115,22 @@ function validateItems(item) {
     // _id: Joi.string(),
     title: Joi.string().min(2).max(50).required(),
     dish: Joi.string(),
+    book: Joi.string(),
     tag: Joi.array(),
     related: Joi.array(),
     fresh: Joi.array(),
     stock: Joi.array(),
     directions: Joi.array(),
     info: Joi.string().empty(""),
-    date: Joi.array(),
     myrecipe: Joi.boolean(),
   });
   var validation = schema.validate(item);
   return validation;
 }
 
+// grocery
+
 var grocerySchema = new mongoose.Schema({
-  // _id: mongoose.Schema.Types.ObjectId,
   title: {
     type: String,
     required: true,
@@ -137,8 +140,6 @@ var grocerySchema = new mongoose.Schema({
   },
   dish: dishSchema,
   tag: [tagSchema],
-  // dish: { type: mongoose.Schema.Types.ObjectId, ref: "Dish" },
-  // tag: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
   related: [relatedSchema],
   fresh: [freshSchema],
   stock: [stockSchema],
@@ -151,7 +152,6 @@ const Grocery = mongoose.model("Grocery", grocerySchema);
 
 function validateGroceries(grocery) {
   var schema = Joi.object({
-    // _id: Joi.string(),
     title: Joi.string().min(5).max(50).required(),
     dish: Joi.string(),
     tag: Joi.array(),
@@ -165,6 +165,36 @@ function validateGroceries(grocery) {
   var validation = schema.validate(grocery);
   return validation;
 }
+
+// nothetkookt
+
+var nothetkooktSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 2,
+    maxlength: 255,
+  },
+  dish: dishSchema,
+  tag: [tagSchema],
+  link: { type: String },
+});
+
+const Nothetkookt = mongoose.model("Nothetkookt", nothetkooktSchema);
+
+function validateNothetkookt(nothetkookt) {
+  var schema = Joi.object({
+    title: Joi.string().min(5).max(50).required(),
+    dish: Joi.string(),
+    tag: Joi.array(),
+    link: Joi.string().empty(""),
+  });
+  var validation = schema.validate(nothetkookt);
+  return validation;
+}
+
+// user
 
 const userSchema = new mongoose.Schema({
   name: {
@@ -191,6 +221,7 @@ const userSchema = new mongoose.Schema({
   },
   items: [itemSchema],
   groceries: [grocerySchema],
+  nothetkookt: [nothetkooktSchema],
   stock: [],
   extra: [],
   registrationDate: {
@@ -223,6 +254,7 @@ function validateUser(user) {
     active: Joi.boolean().default(false),
     items: Joi.array(),
     grocery: Joi.array(),
+    nothetkookt: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
     registrationDate: Joi.date(),
@@ -235,3 +267,4 @@ exports.User = User;
 exports.validateUser = validateUser;
 exports.validateItems = validateItems;
 exports.validateGroceries = validateGroceries;
+exports.validateNothetkookt = validateNothetkookt;

@@ -5,7 +5,12 @@ const bcrypt = require("bcrypt");
 const _ = require("lodash");
 const express = require("express");
 const router = express.Router();
-const { User, validateUser, validateItems } = require("../models/user");
+const {
+  User,
+  validateUser,
+  validateItems,
+  validateGroceries,
+} = require("../models/user");
 const { validateRecipe } = require("../models/recipe");
 var nodemailer = require("nodemailer");
 var sgTransport = require("nodemailer-sendgrid-transport");
@@ -118,6 +123,7 @@ router.get("/items", auth, async (req, res) => {
 });
 
 router.put("/items/:id", async (req, res) => {
+  // console.log("min");
   // const { error } = validateItems(req.body.items);
   // if (error) return res.status(400).send(error.details[0].message);
   console.log("plus");
@@ -162,7 +168,7 @@ router.put("/groceries/:id", async (req, res) => {
       new: true,
     }
   );
-  // console.log("plus");
+  console.log("plus");
   res.send(user);
 });
 
@@ -191,6 +197,30 @@ router.put("/extra/:id", async (req, res) => {
     }
   );
   // console.log("plus extra");
+  res.send(user);
+});
+
+// nothetkookt
+
+router.get("/nothetkookt", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-__v");
+  const nothetkookt = user.nothetkookt;
+  res.send(nothetkookt);
+});
+
+router.put("/nothetkookt/:id", async (req, res) => {
+  // const { error } = validatenothetkookt(req.body.nothetkookt);
+  // if (error) return res.status(400).send(error.details[0].message);
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      nothetkookt: req.body.nothetkookt,
+    },
+    {
+      new: true,
+    }
+  );
+  // console.log("plus");
   res.send(user);
 });
 
