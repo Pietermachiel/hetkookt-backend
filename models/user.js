@@ -105,7 +105,7 @@ var itemSchema = new mongoose.Schema({
   directions: [{ type: Object }],
   info: { type: String },
   // date: [dateSchema],
-  myrecipe: { type: Boolean, default: true },
+  myrecipe: { type: Boolean },
 });
 
 const Item = mongoose.model("Item", itemSchema);
