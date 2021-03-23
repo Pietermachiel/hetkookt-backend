@@ -21,7 +21,7 @@ router.get("/me", auth, async (req, res) => {
   res.send(user);
 });
 
-router.get("/", async (req, res) => {
+router.get("/", auth, async (req, res) => {
   const users = await User.find();
   res.send(users);
 });
