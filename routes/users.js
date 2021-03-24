@@ -200,6 +200,30 @@ router.put("/extra/:id", async (req, res) => {
   res.send(user);
 });
 
+// nothetkookt
+
+router.get("/nothetkookt", auth, async (req, res) => {
+  const user = await User.findById(req.user._id).select("-__v");
+  const nothetkookt = user.nothetkookt;
+  res.send(nothetkookt);
+});
+
+router.put("/nothetkookt/:id", async (req, res) => {
+  // const { error } = validatenothetkookt(req.body.nothetkookt);
+  // if (error) return res.status(400).send(error.details[0].message);
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      nothetkookt: req.body.nothetkookt,
+    },
+    {
+      new: true,
+    }
+  );
+  // console.log("plus");
+  res.send(user);
+});
+
 // niethetkookt
 
 router.get("/niethetkookt", auth, async (req, res) => {
