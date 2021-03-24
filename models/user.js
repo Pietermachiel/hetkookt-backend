@@ -248,6 +248,7 @@ const userSchema = new mongoose.Schema({
   items: [itemSchema],
   groceries: [grocerySchema],
   nothetkookt: [nothetkooktSchema],
+  niethetkookt: [niethetkooktSchema],
   stock: [],
   extra: [],
   registrationDate: {
@@ -281,6 +282,7 @@ function validateUser(user) {
     items: Joi.array(),
     grocery: Joi.array(),
     nothetkookt: Joi.array(),
+    niethetkookt: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
     registrationDate: Joi.date(),
