@@ -194,6 +194,32 @@ function validateNothetkookt(nothetkookt) {
   return validation;
 }
 
+// niethetkookt
+
+var niethetkooktSchema = new mongoose.Schema({
+  title: {
+    type: String,
+    required: true,
+    trim: true,
+    minlength: 2,
+    maxlength: 255,
+  },
+  site_name: { type: String },
+  link: { type: String },
+});
+
+const Niethetkookt = mongoose.model("Niethetkookt", niethetkooktSchema);
+
+function validateNiethetkookt(niethetkookt) {
+  var schema = Joi.object({
+    title: Joi.string().min(5).max(50).required(),
+    site_name: Joi.string(),
+    link: Joi.string().empty(""),
+  });
+  var validation = schema.validate(niethetkookt);
+  return validation;
+}
+
 // user
 
 const userSchema = new mongoose.Schema({
@@ -268,3 +294,4 @@ exports.validateUser = validateUser;
 exports.validateItems = validateItems;
 exports.validateGroceries = validateGroceries;
 exports.validateNothetkookt = validateNothetkookt;
+exports.validateNiethetkookt = validateNiethetkookt;

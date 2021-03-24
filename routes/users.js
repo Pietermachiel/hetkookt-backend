@@ -200,21 +200,21 @@ router.put("/extra/:id", async (req, res) => {
   res.send(user);
 });
 
-// nothetkookt
+// niethetkookt
 
-router.get("/nothetkookt", auth, async (req, res) => {
+router.get("/niethetkookt", auth, async (req, res) => {
   const user = await User.findById(req.user._id).select("-__v");
-  const nothetkookt = user.nothetkookt;
-  res.send(nothetkookt);
+  const niethetkookt = user.niethetkookt;
+  res.send(niethetkookt);
 });
 
-router.put("/nothetkookt/:id", async (req, res) => {
-  // const { error } = validatenothetkookt(req.body.nothetkookt);
+router.put("/niethetkookt/:id", async (req, res) => {
+  // const { error } = validateniethetkookt(req.body.niethetkookt);
   // if (error) return res.status(400).send(error.details[0].message);
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      nothetkookt: req.body.nothetkookt,
+      niethetkookt: req.body.niethetkookt,
     },
     {
       new: true,
