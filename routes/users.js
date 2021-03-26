@@ -10,11 +10,14 @@ const {
   validateUser,
   validateItems,
   validateGroceries,
+  validateNothetkookt,
+  validateNiethetkookt,
 } = require("../models/user");
 const { validateRecipe } = require("../models/recipe");
 var nodemailer = require("nodemailer");
 var sgTransport = require("nodemailer-sendgrid-transport");
 var mailtemplate = require("../mail/mailtemplate");
+const fetchMetaData = require("meta-fetcher");
 
 router.get("/me", auth, async (req, res) => {
   const user = await User.findById(req.user._id).select("-password -__v");
@@ -209,8 +212,10 @@ router.get("/nothetkookt", auth, async (req, res) => {
 });
 
 router.put("/nothetkookt/:id", async (req, res) => {
-  // const { error } = validatenothetkookt(req.body.nothetkookt);
+  // const { error } = validateNothetkookt(req.body.nothetkookt);
   // if (error) return res.status(400).send(error.details[0].message);
+  console.log("req.body");
+  console.log(req.body);
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
@@ -233,6 +238,44 @@ router.get("/niethetkookt", auth, async (req, res) => {
 });
 
 router.put("/niethetkookt/:id", async (req, res) => {
+  // const { error } = validateNiethetkookt(req.body.niethetkookt);
+  // if (error) return res.status(400).send(error.details[0].message);
+  console.log("req.body - link");
+  console.log(req.body.niethetkookt.link);
+  console.log("dish");
+  console.log(req.body.niethetkookt.dish.name);
+  // console.log("req.body.niethetkookt");
+  // console.log(req.body.niethetkookt.find((n) => n.link));
+  const newlink = req.body.niethetkookt.link;
+  let og_url = await fetchMetaData(newlink);
+  const thedish = req.body.niethetkookt.dish;
+  // console.log("og_url");
+  // console.log(og_url);
+
+  const new_og_url = {
+    title: og_url.opengraph["og:title"],
+    site_name: og_url.opengraph["og:site_name"],
+    link: og_url.opengraph["og:url"],
+    dish: thedish,
+  };
+  console.log("new_og_url");
+  console.log(new_og_url);
+  user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      $push: {
+        niethetkookt: new_og_url,
+      },
+    },
+    {
+      new: true,
+    }
+  );
+  // console.log("plus");
+  res.send(user);
+});
+
+router.put("/deleteniethetkookt/:id", async (req, res) => {
   // const { error } = validateniethetkookt(req.body.niethetkookt);
   // if (error) return res.status(400).send(error.details[0].message);
   const user = await User.findByIdAndUpdate(

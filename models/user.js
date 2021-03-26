@@ -205,6 +205,7 @@ var niethetkooktSchema = new mongoose.Schema({
     maxlength: 255,
   },
   site_name: { type: String },
+  dish: dishSchema,
   link: { type: String },
 });
 
@@ -214,7 +215,8 @@ function validateNiethetkookt(niethetkookt) {
   var schema = Joi.object({
     title: Joi.string().min(5).max(50).required(),
     site_name: Joi.string(),
-    link: Joi.string().empty(""),
+    dish: Joi.string(),
+    link: Joi.string(),
   });
   var validation = schema.validate(niethetkookt);
   return validation;
