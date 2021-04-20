@@ -304,7 +304,8 @@ router.put("/verify/:token", (req, res) => {
     user.active = true; // Change account status to Activated
     // Mongoose Method to save user into the database
     user.save();
-    // console.log(user);
+    console.log("user");
+    console.log(user._id);
   });
 });
 
