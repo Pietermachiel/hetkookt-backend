@@ -300,7 +300,7 @@ router.put("/info/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      info: req.body,
+      info: req.body.info,
     },
     {
       new: true,
