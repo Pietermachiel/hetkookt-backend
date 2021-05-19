@@ -240,10 +240,10 @@ router.get("/niethetkookt", auth, async (req, res) => {
 router.put("/niethetkookt/:id", async (req, res) => {
   // const { error } = validateNiethetkookt(req.body.niethetkookt);
   // if (error) return res.status(400).send(error.details[0].message);
-  console.log("req.body - link");
-  console.log(req.body.niethetkookt.link);
-  console.log("dish");
-  console.log(req.body.niethetkookt.dish.name);
+  // console.log("req.body - link");
+  // console.log(req.body.niethetkookt.link);
+  // console.log("dish");
+  // console.log(req.body.niethetkookt.dish.name);
   // console.log("req.body.niethetkookt");
   // console.log(req.body.niethetkookt.find((n) => n.link));
   const newlink = req.body.niethetkookt.link;
@@ -258,8 +258,8 @@ router.put("/niethetkookt/:id", async (req, res) => {
     link: og_url.opengraph["og:url"],
     dish: thedish,
   };
-  console.log("new_og_url");
-  console.log(new_og_url);
+  // console.log("new_og_url");
+  // console.log(new_og_url);
   user = await User.findByIdAndUpdate(
     req.params.id,
     {
@@ -288,6 +288,21 @@ router.put("/deleteniethetkookt/:id", async (req, res) => {
     }
   );
   // console.log("plus");
+  res.send(user);
+});
+
+// info
+
+router.put("/info/:id", async (req, res) => {
+  const user = await User.findByIdAndUpdate(
+    req.params.id,
+    {
+      info: req.body.info,
+    },
+    {
+      new: true,
+    }
+  );
   res.send(user);
 });
 

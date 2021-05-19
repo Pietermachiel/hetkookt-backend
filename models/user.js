@@ -222,6 +222,31 @@ function validateNiethetkookt(niethetkookt) {
   return validation;
 }
 
+// info
+
+var infoSchema = new mongoose.Schema({
+  _id: { type: String },
+  info_id: { type: String },
+  text: {
+    type: String,
+    trim: true,
+    minlength: 2,
+    maxlength: 1000,
+  },
+});
+
+const Info = mongoose.model("Info", infoSchema);
+
+function validateInfo(info) {
+  var schema = Joi.object({
+    _id: Joi.string(),
+    info_id: Joi.string(),
+    text: Joi.string().min(2).max(1000),
+  });
+  var validation = schema.validate(info);
+  return validation;
+}
+
 // user
 
 const userSchema = new mongoose.Schema({
@@ -253,6 +278,7 @@ const userSchema = new mongoose.Schema({
   niethetkookt: [niethetkooktSchema],
   stock: [],
   extra: [],
+  info: [infoSchema],
   registrationDate: {
     type: Date,
     default: Date.now,
@@ -287,6 +313,7 @@ function validateUser(user) {
     niethetkookt: Joi.array(),
     stock: Joi.array(),
     extra: Joi.array(),
+    info: Joi.array(),
     registrationDate: Joi.date(),
   });
   const validation = schema.validate(user);
@@ -299,3 +326,4 @@ exports.validateItems = validateItems;
 exports.validateGroceries = validateGroceries;
 exports.validateNothetkookt = validateNothetkookt;
 exports.validateNiethetkookt = validateNiethetkookt;
+exports.validateInfo = validateInfo;
