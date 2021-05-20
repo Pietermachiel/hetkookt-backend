@@ -49,7 +49,7 @@ const freshSchema = new mongoose.Schema({
   to_buy: { type: Boolean, default: true },
 });
 
-const stocksSchema = new mongoose.Schema({
+const stockSchema = new mongoose.Schema({
   ingredient: { type: String },
   quantity: { type: String, default: "" },
   unit: { type: String },
@@ -76,7 +76,7 @@ const relatedSchema = mongoose.Schema({
   },
   related: [],
   fresh: [freshSchema],
-  stocks: [stocksSchema],
+  stock: [stockSchema],
   directions: [directionsSchema],
   info: { type: String },
   date: [dateSchema],
@@ -101,7 +101,7 @@ var itemSchema = new mongoose.Schema({
   // tag: [{ type: mongoose.Schema.Types.ObjectId, ref: "Tag" }],
   related: [{ type: Object }],
   fresh: [{ type: Object }],
-  stocks: [{ type: Object }],
+  stock: [{ type: Object }],
   directions: [{ type: Object }],
   info: { type: String },
   // date: [dateSchema],
@@ -119,7 +119,7 @@ function validateItems(item) {
     tag: Joi.array(),
     related: Joi.array(),
     fresh: Joi.array(),
-    stocks: Joi.array(),
+    stock: Joi.array(),
     directions: Joi.array(),
     info: Joi.string().empty(""),
     myrecipe: Joi.boolean(),
@@ -142,7 +142,7 @@ var grocerySchema = new mongoose.Schema({
   tag: [tagSchema],
   related: [relatedSchema],
   fresh: [freshSchema],
-  stocks: [stocksSchema],
+  stock: [stockSchema],
   directions: [directionsSchema],
   book: bookSchema,
   info: { type: String },
@@ -157,7 +157,7 @@ function validateGroceries(grocery) {
     tag: Joi.array(),
     related: Joi.array(),
     fresh: Joi.array(),
-    stocks: Joi.array(),
+    stock: Joi.array(),
     directions: Joi.array(),
     book: Joi.string(),
     info: Joi.string().empty(""),
