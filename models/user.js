@@ -236,7 +236,7 @@ var infosSchema = new mongoose.Schema({
 
 const Infos = mongoose.model("Infos", infosSchema);
 
-function validateInfo(infos) {
+function validateInfos(infos) {
   var schema = Joi.object({
     info_id: Joi.string(),
     text: Joi.string().min(2).max(1000),
