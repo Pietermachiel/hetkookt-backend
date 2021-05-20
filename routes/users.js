@@ -175,11 +175,11 @@ router.put("/groceries/:id", async (req, res) => {
   res.send(user);
 });
 
-router.put("/stock/:id", async (req, res) => {
+router.put("/stocks/:id", async (req, res) => {
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      stock: req.body.stock,
+      stocks: req.body.stocks,
     },
     {
       new: true,
