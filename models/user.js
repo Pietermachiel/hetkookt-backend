@@ -225,6 +225,8 @@ function validateNiethetkookt(niethetkookt) {
 // info
 
 var infosSchema = new mongoose.Schema({
+  title: { type: String },
+  dish: dishSchema,
   info_id: { type: String },
   text: {
     type: String,
@@ -238,6 +240,8 @@ const Infos = mongoose.model("Infos", infosSchema);
 
 function validateInfos(infos) {
   var schema = Joi.object({
+    title: Joi.string(),
+    dish: Joi.string(),
     info_id: Joi.string(),
     text: Joi.string().min(2).max(1000),
   });
