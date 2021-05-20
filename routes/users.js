@@ -293,14 +293,14 @@ router.put("/deleteniethetkookt/:id", async (req, res) => {
 
 // info
 
-router.put("/info/:id", async (req, res) => {
-  console.log("require info");
+router.put("/infos/:id", async (req, res) => {
+  console.log("require infos");
   console.log(req.params.id);
   console.log(req.body);
   const user = await User.findByIdAndUpdate(
     req.params.id,
     {
-      info: req.body.info,
+      infos: req.body.infos,
     },
     {
       new: true,
