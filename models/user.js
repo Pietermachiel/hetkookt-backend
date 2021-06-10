@@ -131,6 +131,7 @@ function validateItems(item) {
 // grocery
 
 var grocerySchema = new mongoose.Schema({
+  grocery_id: { type: String },
   title: {
     type: String,
     required: true,
