@@ -141,12 +141,12 @@ var grocerySchema = new mongoose.Schema({
   },
   dish: dishSchema,
   tag: [tagSchema],
-  related: [relatedSchema],
   fresh: [freshSchema],
   stock: [stockSchema],
-  directions: [directionsSchema],
-  book: bookSchema,
-  info: { type: String },
+  // related: [relatedSchema],
+  // directions: [directionsSchema],
+  // book: bookSchema,
+  // info: { type: String },
 });
 
 const Grocery = mongoose.model("Grocery", grocerySchema);
